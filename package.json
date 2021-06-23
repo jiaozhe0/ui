@@ -1,5 +1,5 @@
 {
-  "name": "fcwz-ui",
+  "name": "dacai-ui",
   "version": "1.0.0",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui.common.js",
