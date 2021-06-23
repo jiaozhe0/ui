@@ -1,16 +1,18 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:12:00
- * @LastEditTime: 2021-06-23 11:12:09
+ * @LastEditTime: 2021-06-23 16:16:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/bleed.vue
 -->
 <template>
   <div class="pg-bleed">
-    <div v-for="item in bleedList"
-         :class="['bleed-item', item.type]"
-         :style="item"></div>
+    <div
+      v-for="item in bleedList"
+      :class="['bleed-item', item.type]"
+      :style="item"
+    ></div>
   </div>
 </template>
 
@@ -25,27 +27,27 @@ export default {
         switch (index) {
           case 0:
             return {
-              top: item + "em",
+              top: item + 'em',
               left: 0,
-              type: " horizontal"
+              type: ' horizontal'
             };
           case 1:
             return {
-              right: item + "em",
+              right: item + 'em',
               top: 0,
-              type: "vertical"
+              type: 'vertical'
             };
           case 2:
             return {
-              bottom: item + "em",
+              bottom: item + 'em',
               left: 0,
-              type: "horizontal"
+              type: 'horizontal'
             };
           case 3:
             return {
               top: 0,
-              left: item + "em",
-              type: "vertical"
+              left: item + 'em',
+              type: 'vertical'
             };
         }
       });
