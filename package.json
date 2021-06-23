@@ -1,5 +1,5 @@
 {
-  "name": "element-ui",
+  "name": "fcwz-ui",
   "version": "2.15.2",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui.common.js",
@@ -121,7 +121,6 @@
     "markdown-it-container": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.1",
     "mocha": "^6.0.2",
-    "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss": "^7.0.14",
     "progress-bar-webpack-plugin": "^1.11.0",
@@ -136,6 +135,7 @@
     "uppercamelcase": "^1.1.0",
     "url-loader": "^1.0.1",
     "vue": "2.5.21",
+    "node-sass": "^4.12.0",
     "vue-loader": "^15.7.0",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "2.5.21",
