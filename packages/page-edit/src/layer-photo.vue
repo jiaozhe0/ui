@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:11:07
- * @LastEditTime: 2021-06-23 16:24:09
+ * @LastEditTime: 2021-06-23 18:17:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer-photo.vue
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import PhotoLayer from 'element-ui/packages/layer-photo';
+import PhotoLayer from '../../layer-photo';
 export default {
   props: {
     layer: Object,
