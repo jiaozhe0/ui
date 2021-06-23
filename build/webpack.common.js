@@ -7,7 +7,7 @@ const config = require('./config');
 module.exports = {
   mode: 'production',
   entry: {
-    app: ['./src/index.js']
+    app: ['./src/dacai.js']
   },
   output: {
     path: path.resolve(process.cwd(), './lib'),
