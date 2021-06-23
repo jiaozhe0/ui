@@ -1,4 +1,5 @@
 {
+  "page-edit": "./packages/page-edit/index.js",
   "pagination": "./packages/pagination/index.js",
   "dialog": "./packages/dialog/index.js",
   "autocomplete": "./packages/autocomplete/index.js",
@@ -83,5 +84,7 @@
   "popconfirm": "./packages/popconfirm/index.js",
   "skeleton": "./packages/skeleton/index.js",
   "skeleton-item": "./packages/skeleton-item/index.js",
-  "empty": "./packages/empty/index.js"
+  "empty": "./packages/empty/index.js",
+  "layer-photo": "./packages/layer-photo/index.js",
+  "layer-text": "./packages/layer-text/index.js"
 }

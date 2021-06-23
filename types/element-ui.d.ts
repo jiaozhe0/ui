@@ -85,6 +85,9 @@ import { ElSkeletonItem } from './skeleton-item'
 import { ElCascaderPanel } from './cascader-panel'
 import { ElEmpty } from './empty'
 import { ElSpinner } from './spinner'
+import { FcPageEdit } from './page-edit'
+import { FcLayerPhoto } from './layer-photo'
+import { FcLayerText } from './layer-text'
 
 export interface InstallationOptions {
   locale: any,
@@ -364,3 +367,12 @@ export class Empty extends ElEmpty {}
 
 /** Spinner Component */
 export class Spinner extends ElSpinner {}
+
+/** PageEdit Component */
+export class PageEdit extends ElPageEdit {}
+
+/** LayerPhoto Component */
+export class LayerPhoto extends ElLayerPhoto {}
+
+/** LayerText Component */
+export class LayerText extends ElLayerText {}

@@ -299,6 +299,18 @@
             {
               "path": "/drawer",
               "title": "Drawer 抽屉"
+            },
+            {
+              "path": "/page-edit",
+              "title": "PageEdit 可编辑的产品页"
+            },
+            {
+              "path": "/layer-photo",
+              "title": "LayerPhoto 图片图层"
+            },
+            {
+              "path": "/layer-text",
+              "title": "LayerText 文字图层"
             }
           ]
         }
@@ -605,6 +617,18 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/page-edit",
+              "title": "PageEdit"
+            },
+            {
+              "path": "/layer-photo",
+              "title": "LayerPhoto"
+            },
+            {
+              "path": "/layer-text",
+              "title": "LayerText"
             }
           ]
         }
@@ -911,6 +935,18 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/page-edit",
+              "title": "PageEdit"
+            },
+            {
+              "path": "/layer-photo",
+              "title": "LayerPhoto"
+            },
+            {
+              "path": "/layer-text",
+              "title": "LayerText"
             }
           ]
         }
@@ -1217,6 +1253,18 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/page-edit",
+              "title": "PageEdit"
+            },
+            {
+              "path": "/layer-photo",
+              "title": "LayerPhoto"
+            },
+            {
+              "path": "/layer-text",
+              "title": "LayerText"
             }
           ]
         }

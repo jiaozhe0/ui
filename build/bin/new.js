@@ -98,12 +98,23 @@ export declare class Fc${ComponentName} extends ElementUIComponent {
 ];
 
 // 添加到 components.json
-const componentsFile = require("../../fc-components.json");
+const componentsFile = require("../../components.json");
 if (componentsFile[componentname]) {
   console.error(`${componentname} 已存在.`);
   process.exit(1);
 }
+const fcComponentsFile = require("../../fc-components.json");
+if (fcComponentsFile[componentname]) {
+  console.error(`${componentname} 已存在.`);
+  process.exit(1);
+}
+
 componentsFile[componentname] = `./packages/${componentname}/index.js`;
+fileSave(path.join(__dirname, "../../components.json"))
+  .write(JSON.stringify(componentsFile, null, "  "), "utf8")
+  .end("\n");
+
+fcComponentsFile[componentname] = `./packages/${componentname}/index.js`;
 fileSave(path.join(__dirname, "../../fc-components.json"))
   .write(JSON.stringify(componentsFile, null, "  "), "utf8")
   .end("\n");
