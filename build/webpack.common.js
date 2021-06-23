@@ -10,7 +10,7 @@ module.exports = {
     app: ['./src/index.js']
   },
   output: {
-    path: path.resolve(process.cwd(), ''),
+    path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
     filename: 'element-ui.common.js',
     chunkFilename: '[id].js',
