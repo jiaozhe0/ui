@@ -147,6 +147,7 @@
   },
   "prettier": {
     "eslintIntegration": true,
+    "trailingComma": "none",
     "stylelintIntegration": true,
     "singleQuote": true,
     "semi": true,

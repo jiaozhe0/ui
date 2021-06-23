@@ -103,20 +103,20 @@ if (componentsFile[componentname]) {
   console.error(`${componentname} 已存在.`);
   process.exit(1);
 }
+componentsFile[componentname] = `./packages/${componentname}/index.js`;
+fileSave(path.join(__dirname, '../../components.json'))
+  .write(JSON.stringify(componentsFile, null, '  '), 'utf8')
+  .end('\n');
+
 const fcComponentsFile = require('../../fc-components.json');
 if (fcComponentsFile[componentname]) {
   console.error(`${componentname} 已存在.`);
   process.exit(1);
 }
 
-componentsFile[componentname] = `./packages/${componentname}/index.js`;
-fileSave(path.join(__dirname, '../../components.json'))
-  .write(JSON.stringify(componentsFile, null, '  '), 'utf8')
-  .end('\n');
-
 fcComponentsFile[componentname] = `./packages/${componentname}/index.js`;
 fileSave(path.join(__dirname, '../../fc-components.json'))
-  .write(JSON.stringify(componentsFile, null, '  '), 'utf8')
+  .write(JSON.stringify(fcComponentsFile, null, '  '), 'utf8')
   .end('\n');
 
 // 添加到 index.scss

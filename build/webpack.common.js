@@ -10,7 +10,7 @@ module.exports = {
     app: ['./src/index.js']
   },
   output: {
-    path: path.resolve(process.cwd(), './lib'),
+    path: path.resolve(process.cwd(), ''),
     publicPath: '/dist/',
     filename: 'element-ui.common.js',
     chunkFilename: '[id].js',
@@ -64,8 +64,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new ProgressBarPlugin(),
-    new VueLoaderPlugin()
-  ]
+  plugins: [new ProgressBarPlugin(), new VueLoaderPlugin()]
 };
