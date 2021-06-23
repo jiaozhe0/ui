@@ -1,6 +1,6 @@
 {
   "name": "dacai-ui",
-  "version": "1.0.2-0",
+  "version": "1.0.2-1",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui.common.js",
   "files": [
@@ -152,7 +152,6 @@
     "singleQuote": true,
     "semi": true,
     "insertPragma": false,
-    "trailingComma": "none",
     "arrowParens": "avoid"
   }
 }
