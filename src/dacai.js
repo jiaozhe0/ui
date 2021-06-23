@@ -2,16 +2,20 @@
 import PageEdit from '../packages/page-edit/index.js';
 import LayerPhoto from '../packages/layer-photo/index.js';
 import LayerText from '../packages/layer-text/index.js';
-const components = [PageEdit, LayerPhoto, LayerText];
+const components = [
+    PageEdit,
+  LayerPhoto,
+  LayerText
+]
 const install = function(Vue, opts = {}) {
   components.forEach(component => {
     Vue.component(component.name, component);
   });
-};
+}
 export default {
-  version: '1.0.2-2',
+  version: '1.0.2-3',
   install,
   PageEdit,
   LayerPhoto,
   LayerText
-};
+}
