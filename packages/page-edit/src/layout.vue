@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 16:15:03
- * @LastEditTime: 2021-06-23 16:15:19
+ * @LastEditTime: 2021-06-27 18:34:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layout.vue
@@ -20,7 +20,7 @@
       ></pg-layer>
     </div>
     <div v-else class="layout-item-empty">
-      没有画面
+      拖着图片，只能填充
     </div>
   </div>
 </template>
