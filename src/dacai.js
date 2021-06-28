@@ -3,21 +3,21 @@ import PageEdit from '../packages/page-edit/index.js';
 import LayerPhoto from '../packages/layer-photo/index.js';
 import LayerText from '../packages/layer-text/index.js';
 import PhotoWall from '../packages/photo-wall/index.js';
-import LayerImage from '../packages/layerImage/index.js';
+import LayerImage from '../packages/layer-image/index.js';
 import PageSvg from '../packages/page-svg/index.js';
 const components = [
-    PageEdit,
+  PageEdit,
   LayerPhoto,
   LayerText,
   PhotoWall,
   LayerImage,
   PageSvg
-]
+];
 const install = function(Vue, opts = {}) {
   components.forEach(component => {
     Vue.component(component.name, component);
   });
-}
+};
 export default {
   version: '1.0.2-8',
   install,
@@ -27,4 +27,4 @@ export default {
   PhotoWall,
   LayerImage,
   PageSvg
-}
+};
