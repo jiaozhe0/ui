@@ -2,10 +2,14 @@
 import PageEdit from '../packages/page-edit/index.js';
 import LayerPhoto from '../packages/layer-photo/index.js';
 import LayerText from '../packages/layer-text/index.js';
+import PhotoWall from '../packages/photo-wall/index.js';
+import LayerImage from '../packages/layerImage/index.js';
 const components = [
     PageEdit,
   LayerPhoto,
-  LayerText
+  LayerText,
+  PhotoWall,
+  LayerImage
 ]
 const install = function(Vue, opts = {}) {
   components.forEach(component => {
@@ -17,5 +21,7 @@ export default {
   install,
   PageEdit,
   LayerPhoto,
-  LayerText
+  LayerText,
+  PhotoWall,
+  LayerImage
 }

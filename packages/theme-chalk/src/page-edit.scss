@@ -56,6 +56,17 @@
     .pg-layer-div {
       position: absolute;
     }
+
+    .layout-item-empty {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
   }
 
   .pg-photo-layer {
@@ -74,8 +85,7 @@
       text-align: center;
     }
 
-    .pg-layer-hint {
-    }
+    .pg-layer-hint {}
 
     .pg-layer-mask {
       position: absolute;
@@ -100,6 +110,39 @@
     &:hover {
       .pg-layer-mask {
         display: block;
+      }
+    }
+  }
+
+  .pg-ridge {
+    font-size: inherit;
+
+    .pg-ridge-item {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      z-index: 9;
+      background: #666;
+    }
+  }
+
+  .pg-bleed {
+    font-size: inherit;
+
+    .pg-bleed-item {
+      position: absolute;
+      background-color: red;
+      z-index: 2;
+
+      &.horizontal {
+        height: 1px;
+        width: 100%;
+      }
+
+      &.vertical {
+        width: 1px;
+        height: 100%;
       }
     }
   }

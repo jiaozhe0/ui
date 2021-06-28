@@ -1,27 +1,34 @@
 <!--
  * @Author: jiaozhe
  * @Date: 2021-06-23 10:55:28
- * @LastEditTime: 2021-06-23 16:20:30
+ * @LastEditTime: 2021-06-28 22:53:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/main.vue
 -->
 <template>
-  <div :class="['el-page-edit', { 'is-view': view }]" :style="fontSize">
-    <div v-if="frame.isLine" class="middle-line"></div>
-    <pg-bleed v-if="!bleed.borderWidth" :bleed="bleed"></pg-bleed>
-    <pg-border :border="frame.border"></pg-border>
-    <div class="el-page-wrap" :style="size">
-      <div class="el-page-content" :style="sizeWithBleed">
-        <pg-layout
-          v-for="(item, index) in page.layers"
-          :key="index"
-          :pageId="page.id"
-          :lIndex="index"
-          :bleed="bleed"
-          :scale="scale"
-          :layout="item"
-        ></pg-layout>
+  <div :class="['el-page-edit', { 'is-view': view }]"
+       :style="fontSize">
+    <div v-if="isLine"
+         class="middle-line"></div>
+    <pg-bleed v-if="!bleed.borderWidth"
+              :bleed="bleed"></pg-bleed>
+    <pg-ridge v-if="page.ridgeWidth"
+              :page="page"
+              :productSize="frame.productSize"></pg-ridge>
+    <pg-border v-if="frame.border.length"
+               :border="frame.border"></pg-border>
+    <div class="el-page-wrap"
+         :style="size">
+      <div class="el-page-content"
+           :style="sizeWithBleed">
+        <pg-layout v-for="(item, index) in page.layers"
+                   :key="index"
+                   :layout="item"
+                   :layoutIndex="index"
+                   :bleed="bleed"
+                   :scale="scale"
+                   :pageId="page.id"></pg-layout>
       </div>
     </div>
   </div>
@@ -31,6 +38,7 @@
 import PgLayout from './layout';
 import PgBleed from './bleed';
 import PgBorder from './border';
+import PgRidge from './ridge';
 export default {
   name: 'FcPageEdit',
   props: {
@@ -48,7 +56,6 @@ export default {
       type: Object,
       default() {
         return {
-          output: '',
           bleed: [4, 4, 4, 4],
           border: [40, 40, 40, 40],
           type: ''
@@ -62,6 +69,10 @@ export default {
     view: {
       type: Boolean,
       default: false
+    },
+    layoutIndex: {
+      type: Number,
+      default: 0
     }
   },
   computed: {
@@ -100,8 +111,10 @@ export default {
       };
     },
     bleed() {
-      const { output, bleed } = this.frame;
-      if (output !== 'more') return bleed;
+      const { page, frame } = this;
+      const { layers } = page;
+      const bleed = page.bleed || frame.bleed;
+      if (layers[0].output !== 'more') return bleed;
       return {
         borderWidth: bleed[0] + 'em'
       };
@@ -115,7 +128,8 @@ export default {
   components: {
     PgLayout,
     PgBleed,
-    PgBorder
+    PgBorder,
+    PgRidge
   }
 };
 </script>

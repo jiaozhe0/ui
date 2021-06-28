@@ -88,6 +88,9 @@ import { ElSpinner } from './spinner'
 import { FcPageEdit } from './page-edit'
 import { FcLayerPhoto } from './layer-photo'
 import { FcLayerText } from './layer-text'
+import { FcPhotoWall } from './photo-wall'
+import { FcLayerImage } from './layerImage'
+import { FcPageSvg } from './page-svg'
 
 export interface InstallationOptions {
   locale: any,
@@ -376,3 +379,12 @@ export class LayerPhoto extends ElLayerPhoto {}
 
 /** LayerText Component */
 export class LayerText extends ElLayerText {}
+
+/** PhotoWall Component */
+export class PhotoWall extends ElPhotoWall {}
+
+/** LayerImage Component */
+export class LayerImage extends ElLayerImage {}
+
+/** PageSvg Component */
+export class PageSvg extends ElPageSvg {}

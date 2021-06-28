@@ -311,6 +311,18 @@
             {
               "path": "/layer-text",
               "title": "LayerText 文字图层"
+            },
+            {
+              "path": "/photo-wall",
+              "title": "PhotoWall 照片墙"
+            },
+            {
+              "path": "/layerImage",
+              "title": "LayerImage 素材图层"
+            },
+            {
+              "path": "/page-svg",
+              "title": "PageSvg SVG作品页"
             }
           ]
         }
@@ -629,6 +641,18 @@
             {
               "path": "/layer-text",
               "title": "LayerText"
+            },
+            {
+              "path": "/photo-wall",
+              "title": "PhotoWall"
+            },
+            {
+              "path": "/layerImage",
+              "title": "LayerImage"
+            },
+            {
+              "path": "/page-svg",
+              "title": "PageSvg"
             }
           ]
         }
@@ -947,6 +971,18 @@
             {
               "path": "/layer-text",
               "title": "LayerText"
+            },
+            {
+              "path": "/photo-wall",
+              "title": "PhotoWall"
+            },
+            {
+              "path": "/layerImage",
+              "title": "LayerImage"
+            },
+            {
+              "path": "/page-svg",
+              "title": "PageSvg"
             }
           ]
         }
@@ -1265,6 +1301,18 @@
             {
               "path": "/layer-text",
               "title": "LayerText"
+            },
+            {
+              "path": "/photo-wall",
+              "title": "PhotoWall"
+            },
+            {
+              "path": "/layerImage",
+              "title": "LayerImage"
+            },
+            {
+              "path": "/page-svg",
+              "title": "PageSvg"
             }
           ]
         }

@@ -1,5 +1,8 @@
 {
   "page-edit": "./packages/page-edit/index.js",
   "layer-photo": "./packages/layer-photo/index.js",
-  "layer-text": "./packages/layer-text/index.js"
+  "layer-text": "./packages/layer-text/index.js",
+  "photo-wall": "./packages/photo-wall/index.js",
+  "layerImage": "./packages/layerImage/index.js",
+  "page-svg": "./packages/page-svg/index.js"
 }

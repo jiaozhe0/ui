@@ -1,34 +1,35 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:09:45
- * @LastEditTime: 2021-06-23 18:17:32
+ * @LastEditTime: 2021-06-28 22:49:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer.vue
 -->
 <template>
-  <div :style="position" class="pg-layer-div">
-    <component
-      :is="layer.type + 'Layer'"
-      :scale="scale"
-      :lIndex="lIndex"
-      :pageId="pageId"
-      :bleed="bleed"
-      :layer="layer"
-    ></component>
+  <div :style="position"
+       class="pg-layer-div">
+    <component :is="layer.type + 'Layer'"
+               :scale="scale"
+               :layoutIndex="layoutIndex"
+               :pageId="pageId"
+               :bleed="bleed"
+               :layer="layer"></component>
   </div>
 </template>
 <script>
 import PhotoLayer from './layer-photo';
 import TextLayer from '../../layer-text';
+import ImageLayer from '../../layer-image';
 export default {
   components: {
     PhotoLayer,
-    TextLayer
+    TextLayer,
+    ImageLayer
   },
   props: {
     layer: Object,
-    lIndex: Number,
+    layoutIndex: Number,
     pageId: String,
     bleed: [Object, Array],
     scale: {

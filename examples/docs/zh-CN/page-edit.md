@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 12:01:55
- * @LastEditTime: 2021-06-23 16:23:25
+ * @LastEditTime: 2021-06-28 21:41:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/page-edit.md
@@ -16,13 +16,44 @@
 ```html
 <el-row>
   <el-col>
-    <fc-page-edit :page="frame1.page" :scale="0.04">文字按钮</fc-page-edit>
+    <fc-page-edit :page="frame1.page" :scale="0.04"></fc-page-edit>
+  </el-col>
+  <el-col>
+    <fc-page-edit :page="page" :scale="0.04" :frame="frame"></fc-page-edit>
   </el-col>
 </el-row>
 <script>
   export default {
     data() {
       return {
+        frame: {
+          productSize: {
+            width: 4724,
+            height: 2362
+          },
+          border: [],
+          bleed: [3, 3, 3, 3]
+        },
+        page: {
+          id: '0-366_护封',
+          name: '护封',
+          isFixed: false,
+          layers: [
+            {
+              fill: true
+            }
+          ],
+          width: 8835,
+          height: 2421,
+          isPart: true,
+          partId: 528,
+          paper: {
+            attribute_value_name: '木棉纯白艺术纸',
+            attribute_value_id: 990
+          },
+          bleed: [3, 3, 3, 3],
+          ridgeWidth: 29.5
+        },
         frame1: {
           page: {
             id: '90707_0_y',

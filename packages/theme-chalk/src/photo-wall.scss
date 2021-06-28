@@ -1,0 +1,14 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(photo-wall) {
+
+  .photo-wall-content {
+    position: relative;
+    font-size: inherit;
+  }
+
+  .photo-wall-item {
+    position: absolute;
+  }
+}

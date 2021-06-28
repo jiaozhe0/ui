@@ -1,20 +1,20 @@
 <!--
  * @Author: your name
- * @Date: 2021-06-23 11:17:11
- * @LastEditTime: 2021-06-23 11:17:26
+ * @Date: 2021-06-12 16:39:17
+ * @LastEditTime: 2021-06-28 17:43:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /fcwz-ui/packages/layer-photo/src/ellippse-mask.vue
+ * @FilePath: /element/packages/photo-layer/src/ellipse-mask.vue
 -->
 <template>
-  <clipPath transform="scale(1,1)"
-            :id="layer.id">
-    <circle :id="layer.id"
-            :cx="pos.x"
-            :cy="pos.r"
-            :r="pos.r" />
+  <clipPath :id="layer.id">
+    <ellipse :cx="pos.x"
+             :cy="pos.y"
+             :rx="pos.x"
+             :ry="pos.y"></ellipse>
   </clipPath>
 </template>
+
 <script>
 export default {
   props: {
@@ -25,7 +25,7 @@ export default {
       const { width, height } = this.layer;
       return {
         x: width / 2,
-        r: height / 2
+        y: height / 2
       };
     }
   }

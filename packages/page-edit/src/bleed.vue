@@ -8,11 +8,9 @@
 -->
 <template>
   <div class="pg-bleed">
-    <div
-      v-for="item in bleedList"
-      :class="['bleed-item', item.type]"
-      :style="item"
-    ></div>
+    <div v-for="item in bleedList"
+         :class="['pg-bleed-item', item.type]"
+         :style="item"></div>
   </div>
 </template>
 

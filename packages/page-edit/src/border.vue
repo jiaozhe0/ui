@@ -1,19 +1,17 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:11:36
- * @LastEditTime: 2021-06-23 16:16:30
+ * @LastEditTime: 2021-06-28 21:36:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/border.vue
 -->
 <template>
   <div class="pg-border">
-    <div
-      v-for="(item, index) in borderList"
-      :key="index"
-      :class="['border-item', item.type]"
-      :style="item"
-    ></div>
+    <div v-for="(item, index) in borderList"
+         :key="index"
+         :class="['border-item', item.type]"
+         :style="item"></div>
   </div>
 </template>
 
@@ -24,6 +22,7 @@ export default {
   },
   computed: {
     borderList() {
+      console.log('borderList -> this.border', this.border);
       return this.border.map((item, index) => {
         switch (index) {
           case 0:
