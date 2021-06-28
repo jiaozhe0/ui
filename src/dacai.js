@@ -4,12 +4,14 @@ import LayerPhoto from '../packages/layer-photo/index.js';
 import LayerText from '../packages/layer-text/index.js';
 import PhotoWall from '../packages/photo-wall/index.js';
 import LayerImage from '../packages/layerImage/index.js';
+import PageSvg from '../packages/page-svg/index.js';
 const components = [
     PageEdit,
   LayerPhoto,
   LayerText,
   PhotoWall,
-  LayerImage
+  LayerImage,
+  PageSvg
 ]
 const install = function(Vue, opts = {}) {
   components.forEach(component => {
@@ -17,11 +19,12 @@ const install = function(Vue, opts = {}) {
   });
 }
 export default {
-  version: '1.0.2-7',
+  version: '1.0.2-8',
   install,
   PageEdit,
   LayerPhoto,
   LayerText,
   PhotoWall,
-  LayerImage
+  LayerImage,
+  PageSvg
 }

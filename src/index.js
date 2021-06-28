@@ -89,7 +89,8 @@ import Empty from '../packages/empty/index.js';
 import LayerPhoto from '../packages/layer-photo/index.js';
 import LayerText from '../packages/layer-text/index.js';
 import PhotoWall from '../packages/photo-wall/index.js';
-import LayerImage from '../packages/layerImage/index.js';
+import LayerImage from '../packages/layer-image/index.js';
+import PageSvg from '../packages/page-svg/index.js';
 import locale from 'element-ui/src/locale';
 import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
 
@@ -179,6 +180,7 @@ const components = [
   LayerText,
   PhotoWall,
   LayerImage,
+  PageSvg,
   CollapseTransition
 ];
 
@@ -205,7 +207,6 @@ const install = function(Vue, opts = {}) {
   Vue.prototype.$prompt = MessageBox.prompt;
   Vue.prototype.$notify = Notification;
   Vue.prototype.$message = Message;
-
 };
 
 /* istanbul ignore if */
@@ -214,7 +215,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '1.0.2-7',
+  version: '1.0.2-8',
   locale: locale.use,
   i18n: locale.i18n,
   install,
@@ -224,5 +225,6 @@ export default {
   LayerPhoto,
   LayerText,
   PhotoWall,
-  LayerImage
+  LayerImage,
+  PageSvg
 };
