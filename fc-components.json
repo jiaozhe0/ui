@@ -3,6 +3,6 @@
   "layer-photo": "./packages/layer-photo/index.js",
   "layer-text": "./packages/layer-text/index.js",
   "photo-wall": "./packages/photo-wall/index.js",
-  "layer-mage": "./packages/layer-image/index.js",
+  "layer-image": "./packages/layer-image/index.js",
   "page-svg": "./packages/page-svg/index.js"
 }
