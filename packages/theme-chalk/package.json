@@ -1,6 +1,6 @@
 {
   "name": "dacai-theme-chalk",
-  "version": "1.0.2-8",
+  "version": "1.0.2-9",
   "description": "Element component chalk theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",
