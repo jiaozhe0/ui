@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 12:01:55
- * @LastEditTime: 2021-06-28 21:41:24
+ * @LastEditTime: 2021-06-30 13:32:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/page-edit.md
@@ -15,17 +15,47 @@
 
 ```html
 <el-row>
-  <el-col>
+  <el-col :span="12">
     <fc-page-edit :page="frame1.page" :scale="0.04"></fc-page-edit>
   </el-col>
-  <el-col>
+  <el-col :span="12">
     <fc-page-edit :page="page" :scale="0.04" :frame="frame"></fc-page-edit>
+  </el-col>
+  <el-col :span="12">
+    <fc-page-edit
+      :page="album"
+      :scale="0.04"
+      :frame="frame"
+      @select-layout="test"
+    ></fc-page-edit>
   </el-col>
 </el-row>
 <script>
   export default {
+    methods: {
+      test(index) {
+        console.log(123, index);
+      }
+    },
     data() {
       return {
+        album: {
+          id: '0-366_护封',
+          name: '护封',
+          layers: [
+            {
+              fill: false
+            },
+            {
+              fill: false
+            }
+          ],
+          width: 8835,
+          height: 2421,
+          isPart: true,
+          partId: 528,
+          bleed: [3, 3, 3, 3]
+        },
         frame: {
           productSize: {
             width: 4724,

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 22:09:03
- * @LastEditTime: 2021-06-28 22:23:46
+ * @LastEditTime: 2021-06-29 18:51:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-svg/src/main.vue
@@ -35,6 +35,10 @@ export default {
       type: Number,
       default: 0
     },
+    scale: {
+      type: Number,
+      default: -1
+    },
     page: {
       type: Object,
       default: {
@@ -51,10 +55,16 @@ export default {
       return layers || [this.page];
     },
     sSize() {
-      const { width: scaleWidth, height: scaleHeight } = this;
+      const { width: scaleWidth, height: scaleHeight, scale } = this;
       const { width, height } = this.page;
       if (scaleWidth > 0 && scaleHeight > 0) {
         return { width: scaleWidth, height: scaleHeight };
+      }
+      if (scale > 0) {
+        return {
+          width: scale * width,
+          height: scale * height
+        };
       }
       if (scaleWidth) {
         const scale = scaleWidth / width;

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:12:00
- * @LastEditTime: 2021-06-23 16:16:43
+ * @LastEditTime: 2021-06-30 12:56:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/bleed.vue
@@ -21,30 +21,31 @@ export default {
   },
   computed: {
     bleedList() {
+      const val = this.bleed[0] * 11.8;
       return this.bleed.map((item, index) => {
         switch (index) {
           case 0:
             return {
-              top: item + 'em',
-              left: 0,
-              type: ' horizontal'
+              top: 0,
+              height: val + 'em',
+              type: 'horizontal'
             };
           case 1:
             return {
-              right: item + 'em',
-              top: 0,
+              right: 0,
+              width: val + 'em',
               type: 'vertical'
             };
           case 2:
             return {
-              bottom: item + 'em',
-              left: 0,
+              bottom: 0,
+              height: val + 'em',
               type: 'horizontal'
             };
           case 3:
             return {
-              top: 0,
-              left: item + 'em',
+              left: 0,
+              width: val + 'em',
               type: 'vertical'
             };
         }

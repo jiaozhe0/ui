@@ -11,7 +11,11 @@
       border-color: #fff !important;
     }
   }
-
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
   .middle-line {
     position: absolute;
     left: 50%;
@@ -22,26 +26,35 @@
   }
 
   .el-page-wrap {
+    display: table;
     position: relative;
     top: 0;
     left: 0;
     font-size: inherit;
     overflow: hidden;
+  }
 
-    .el-page-content {
-      position: relative;
-      display: table;
-      font-size: inherit;
-      background: #eee;
-    }
+  .el-page-content {
+    display: table;
+    position: relative;
+    font-size: inherit;
+    background: #eee;
   }
 
   .pg-layout-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: relative;
     display: table-cell;
+    background: #fff;
     font-size: inherit;
+    width: 50%;
+
+    &.fill {
+      width: 100%;
+    }
+
+    &.checked {
+      box-shadow: 0 0 0 2px #a2c6f0;
+    }
 
     .layout-item-content {
       position: absolute;
@@ -55,6 +68,16 @@
 
     .pg-layer-div {
       position: absolute;
+      &.text::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        left: 100%;
+        z-index: 2;
+        background: transparent;
+        content: '';
+      }
     }
 
     .layout-item-empty {
@@ -79,13 +102,13 @@
     .centre {
       position: absolute;
       display: inline-block;
+      padding: 20px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
+      z-index: 9;
     }
-
-    .pg-layer-hint {}
 
     .pg-layer-mask {
       position: absolute;
@@ -95,8 +118,13 @@
       color: #fff;
       background-color: rgba(0, 0, 0, 0.4);
       cursor: pointer;
+      z-index: 9;
     }
-
+    .pg-layer-hint {
+      svg {
+        position: static;
+      }
+    }
     .bleed {
       position: absolute;
       top: 0;
@@ -113,7 +141,6 @@
       }
     }
   }
-
   .pg-ridge {
     font-size: inherit;
 
@@ -126,22 +153,44 @@
       background: #666;
     }
   }
-
   .pg-bleed {
     font-size: inherit;
 
-    .pg-bleed-item {
+    div.pg-bleed-item {
       position: absolute;
-      background-color: red;
       z-index: 2;
 
       &.horizontal {
-        height: 1px;
+        left: 0;
         width: 100%;
+        border-bottom: 0.5px dotted red;
+        &:nth-child(3) {
+          border-bottom-color: transparent;
+          border-top: 0.5px dotted red;
+        }
       }
 
       &.vertical {
-        width: 1px;
+        top: 0;
+        height: 100%;
+        border-left: 0.5px dotted red;
+        &:last-child {
+          border-left-color: transparent;
+          border-right: 0.5px dotted red;
+        }
+      }
+    }
+  }
+  .pg-border {
+    font-size: inherit;
+    .border-item {
+      position: absolute;
+      &.horizontal {
+        left: 0;
+        width: 100%;
+      }
+      &.vertical {
+        top: 0;
         height: 100%;
       }
     }

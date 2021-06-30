@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 10:33:16
- * @LastEditTime: 2021-06-28 17:53:11
+ * @LastEditTime: 2021-06-29 14:33:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/photo-wall.md
@@ -147,7 +147,31 @@
                       style: 'ellipse',
                       zIndex: 1,
                       type: 'photo',
-                      id: '1_6001*7194_1_1'
+                      id: '1_6001*7194_1_1',
+                      data: {
+                        scale: 1,
+                        naturalH: '4480',
+                        naturalW: '6720',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/3cd56100c9fe4fad8__82A9955.jpg',
+                        photoId: '3cd56100c9fe4fad8',
+                        shape: 0,
+                        fileName: '_82A9955.jpg',
+                        result:
+                          'http://fcwz-paiban.phosee.cn//phosee/undefined/3cd56100c9fe4fad8__82A9955.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '0',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 1772.0000000000005,
+                        y: 0,
+                        width: 8151.000000000001,
+                        height: 5434,
+                        initialW: 8151.000000000001,
+                        initialH: 5434,
+                        invalid: false
+                      }
                     }
                   ],
                   width: 6001,

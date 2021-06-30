@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaozhe
  * @Date: 2021-06-23 10:55:28
- * @LastEditTime: 2021-06-28 22:53:17
+ * @LastEditTime: 2021-06-30 13:22:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/main.vue
@@ -19,16 +19,18 @@
     <pg-border v-if="frame.border.length"
                :border="frame.border"></pg-border>
     <div class="el-page-wrap"
-         :style="size">
+         :style="size.outside">
       <div class="el-page-content"
-           :style="sizeWithBleed">
+           :style="size.inside">
         <pg-layout v-for="(item, index) in page.layers"
                    :key="index"
                    :layout="item"
                    :layoutIndex="index"
                    :bleed="bleed"
                    :scale="scale"
-                   :pageId="page.id"></pg-layout>
+                   :checked="layoutIndex === index"
+                   :pageId="page.id"
+                   @click.native="handleClick(index)"></pg-layout>
       </div>
     </div>
   </div>
@@ -42,6 +44,16 @@ import PgRidge from './ridge';
 export default {
   name: 'FcPageEdit',
   props: {
+    frame: {
+      type: Object,
+      default() {
+        return {
+          bleed: [3, 3, 3, 3],
+          border: [],
+          type: ''
+        };
+      }
+    },
     page: {
       type: Object,
       default() {
@@ -49,16 +61,6 @@ export default {
           width: 2,
           height: 1,
           layers: []
-        };
-      }
-    },
-    frame: {
-      type: Object,
-      default() {
-        return {
-          bleed: [4, 4, 4, 4],
-          border: [40, 40, 40, 40],
-          type: ''
         };
       }
     },
@@ -72,7 +74,7 @@ export default {
     },
     layoutIndex: {
       type: Number,
-      default: 0
+      default: -1
     }
   },
   computed: {
@@ -81,48 +83,44 @@ export default {
         fontSize: this.scale + 'px'
       };
     },
-    sizeWithBleed() {
-      const { width, height } = this.page;
-      const { output, bleed } = this.frame;
-      let left = 0;
-      let top = 0;
-      if (this.view && !output) {
-        const [t, l] = bleed;
-        left = -l + 'em';
-        top = -t + 'em';
-      }
-      return {
-        width: width + 'em',
-        height: height + 'em',
-        left,
-        top
-      };
-    },
-    size() {
-      let { width, height } = this.page;
-      const { output, bleed } = this.frame;
-      if (this.view && !output) {
-        width -= bleed[1] * 2;
-        height -= bleed[0] * 2;
-      }
-      return {
-        width: width + 'em',
-        height: height + 'em'
-      };
-    },
     bleed() {
       const { page, frame } = this;
       const { layers } = page;
       const bleed = page.bleed || frame.bleed;
       if (layers[0].output !== 'more') return bleed;
       return {
-        borderWidth: bleed[0] + 'em'
+        borderWidth: bleed[0] * 11.8 + 'em'
       };
     },
     isLine() {
-      const { isPart } = this.page;
+      const { isPart, isHalf } = this.page;
       const { type } = this.frame;
-      return !isPart && type === 'photo_album';
+      return type === 'photo_album' && !isPart && !isHalf;
+    },
+    size() {
+      const { width, height, layers } = this.page;
+      const [layout] = layers;
+      let transform = 'none';
+      let realWidth = width;
+      let realHeight = height;
+      if (this.view && (layout.output === '' || layout === 'one_border')) {
+        const val = this.bleed[0] * 11.8;
+        transform = `translate(-${val}em, -${val}em)`;
+        realWidth -= val;
+        realHeight -= val;
+      }
+      return {
+        outside: {
+          fontSize: this.scale + 'px',
+          width: realWidth + 'em',
+          height: realHeight + 'em'
+        },
+        inside: {
+          width: width + 'em',
+          height: height + 'em',
+          transform
+        }
+      };
     }
   },
   components: {
@@ -130,6 +128,11 @@ export default {
     PgBleed,
     PgBorder,
     PgRidge
+  },
+  methods: {
+    handleClick(index) {
+      this.$emit('select-layout', index);
+    }
   }
 };
 </script>

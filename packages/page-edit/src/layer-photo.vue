@@ -1,27 +1,30 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:11:07
- * @LastEditTime: 2021-06-28 22:49:14
+ * @LastEditTime: 2021-06-30 12:36:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer-photo.vue
 -->
 <template>
   <div class="pg-photo-layer"
-       data-move="true"
        :data-photoid="layer.data && layer.data.photoId"
-       :data-layerid="layerId">
+       :data-layerid="layerId"
+       data-move="true">
     <div v-if="bleed.borderWidth"
          :style="bleedVal"
          class="bleed"></div>
     <div class="pg-layer-mask"
          v-if="layer.data">
-      <div class="centre">点击编辑</div>
+      <div :data-layerid="layerId"
+           class="centre"
+           data-type='layer'>点击编辑</div>
     </div>
     <div v-else
          class="pg-layer-hint centre">
-      添加图片
-      <svg viewBox="0 0 1024 1024"
+      <div v-if="layer.shape === 'logo'">LOGO</div>
+      <svg v-else
+           viewBox="0 0 1024 1024"
            version="1.1"
            xmlns="http://www.w3.org/2000/svg"
            p-id="1746"
@@ -46,8 +49,7 @@ import PhotoLayer from '../../layer-photo';
 export default {
   props: {
     layer: Object,
-    pageId: String,
-    layoutIndex: Number,
+    layerId: String,
     bleed: [Object, Array],
     scale: {
       type: Number,
@@ -58,10 +60,6 @@ export default {
     PhotoLayer
   },
   computed: {
-    layerId() {
-      const { pageId, layoutIndex, layer } = this;
-      return `${pageId}&${layoutIndex}&${layer.id}`;
-    },
     bleedVal() {
       return {
         ...this.bleed,

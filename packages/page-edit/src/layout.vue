@@ -1,14 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 16:15:03
- * @LastEditTime: 2021-06-28 22:48:47
+ * @LastEditTime: 2021-06-29 16:30:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layout.vue
 -->
 <template>
-  <div class="pg-layout-item"
-       :style="styles">
+  <div :class="['pg-layout-item', {'checked': checked, 'fill':layout.fill}]">
     <div v-if="layout.id"
          class="layout-item-content">
       <pg-layer v-for="layer in layout.layer"
@@ -30,12 +29,12 @@
 import PgLayer from './layer';
 export default {
   props: {
+    pageId: String,
     layout: Object,
     layoutIndex: {
       type: Number,
       default: 0
     },
-    pageId: String,
     bleed: {
       bleed: Object,
       default() {
@@ -46,15 +45,14 @@ export default {
       type: Number,
       default: 1
     },
-    styles: {
-      type: Object,
-      default() {
-        return {};
-      }
+    checked: {
+      type: Boolean,
+      default: false
     }
   },
   components: {
     PgLayer
-  }
+  },
+  computed: {}
 };
 </script>
