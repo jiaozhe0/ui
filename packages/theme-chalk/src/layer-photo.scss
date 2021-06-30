@@ -2,4 +2,7 @@
 @import "common/var";
 
 @include b(layer-photo) {
+  &.visible {
+    overflow: initial;
+  }
 }

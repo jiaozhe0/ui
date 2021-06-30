@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:09:45
- * @LastEditTime: 2021-06-30 12:38:28
+ * @LastEditTime: 2021-06-30 18:52:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer.vue
@@ -9,15 +9,21 @@
    //  :pageId="pageId"
 -->
 <template>
-  <div :style="position"
-       :class="['pg-layer-div', layer.type]"
-       :data-layerid="layerId"
-       data-type="layer">
-    <component :is="layer.type + 'Layer'"
-               :scale="scale"
-               :layerId="layerId"
-               :bleed="bleed"
-               :layer="layer"></component>
+  <div
+    :style="position"
+    :class="['pg-layer-div', layer.type]"
+    :data-layerid="layerId"
+    :data-pageid="pageId"
+    data-type="layer"
+  >
+    <component
+      :is="layer.type + 'Layer'"
+      :scale="scale"
+      :layoutId="layerId"
+      :pageId="pageId"
+      :bleed="bleed"
+      :layer="layer"
+    ></component>
   </div>
 </template>
 <script>
@@ -51,8 +57,8 @@ export default {
       };
     },
     layerId() {
-      const { pageId, layoutIndex, layer } = this;
-      return `${pageId}&${layoutIndex}&${layer.id}`;
+      const { layoutIndex, layer } = this;
+      return `${layoutIndex}-${layer.id}`;
     }
   }
 };

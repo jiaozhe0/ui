@@ -4,11 +4,13 @@
 @include b(page-edit) {
   display: table;
   position: relative;
-  border: 1px solid #ddd;
 
   &.is-view {
     .bleed {
       border-color: #fff !important;
+    }
+    .el-page-wrap {
+      overflow: hidden;
     }
   }
   svg {
@@ -31,7 +33,6 @@
     top: 0;
     left: 0;
     font-size: inherit;
-    overflow: hidden;
   }
 
   .el-page-content {
@@ -53,7 +54,7 @@
     }
 
     &.checked {
-      box-shadow: 0 0 0 2px #a2c6f0;
+      box-shadow: 0 0 0 4px #a2c6f0;
     }
 
     .layout-item-content {

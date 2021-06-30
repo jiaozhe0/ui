@@ -1,36 +1,34 @@
 <!--
  * @Author: jiaozhe
  * @Date: 2021-06-23 10:55:28
- * @LastEditTime: 2021-06-30 13:22:42
+ * @LastEditTime: 2021-06-30 18:35:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/main.vue
 -->
 <template>
-  <div :class="['el-page-edit', { 'is-view': view }]"
-       :style="fontSize">
-    <div v-if="isLine"
-         class="middle-line"></div>
-    <pg-bleed v-if="!bleed.borderWidth"
-              :bleed="bleed"></pg-bleed>
-    <pg-ridge v-if="page.ridgeWidth"
-              :page="page"
-              :productSize="frame.productSize"></pg-ridge>
-    <pg-border v-if="frame.border.length"
-               :border="frame.border"></pg-border>
-    <div class="el-page-wrap"
-         :style="size.outside">
-      <div class="el-page-content"
-           :style="size.inside">
-        <pg-layout v-for="(item, index) in page.layers"
-                   :key="index"
-                   :layout="item"
-                   :layoutIndex="index"
-                   :bleed="bleed"
-                   :scale="scale"
-                   :checked="layoutIndex === index"
-                   :pageId="page.id"
-                   @click.native="handleClick(index)"></pg-layout>
+  <div :class="['el-page-edit', { 'is-view': view }]" :style="fontSize">
+    <div v-if="isLine" class="middle-line"></div>
+    <pg-bleed v-if="!bleed.borderWidth" :bleed="bleed"></pg-bleed>
+    <pg-ridge
+      v-if="page.ridgeWidth"
+      :page="page"
+      :productSize="frame.productSize"
+    ></pg-ridge>
+    <pg-border v-if="frame.border.length" :border="frame.border"></pg-border>
+    <div class="el-page-wrap" :style="size.outside">
+      <div class="el-page-content" :style="size.inside">
+        <pg-layout
+          v-for="(item, index) in page.layers"
+          :key="index"
+          :layout="item"
+          :layoutIndex="index"
+          :bleed="bleed"
+          :scale="scale"
+          :checked="layoutIndex === index"
+          :pageId="page.id"
+          @click.native="handleClick(index)"
+        ></pg-layout>
       </div>
     </div>
   </div>
@@ -103,7 +101,7 @@ export default {
       let transform = 'none';
       let realWidth = width;
       let realHeight = height;
-      if (this.view && (layout.output === '' || layout === 'one_border')) {
+      if (this.view && (!layout.output || layout.output === 'one_border')) {
         const val = this.bleed[0] * 11.8;
         transform = `translate(-${val}em, -${val}em)`;
         realWidth -= val;
