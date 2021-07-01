@@ -10,7 +10,7 @@
 -->
 <template>
   <div :style="position"
-       :class="['pg-layer-div', layer.type]"
+       :class="['pg-layer-item', layer.type]"
        :data-layerid="layerId"
        :data-pageid="pageId"
        data-type="layer">
