@@ -1,20 +1,25 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 22:23:52
- * @LastEditTime: 2021-06-28 22:24:25
+ * @LastEditTime: 2021-07-01 17:57:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-svg/src/layout.vue
 -->
 <template>
   <g :transform="transform">
-    <svg :width="layout.width"
-         :height="layout.height"
-         :viewBox="`0 0 ${layout.width} ${layout.height}`">
-      <g v-if="layout.id">
-        <layer-item v-for="item in layout.layer"
-                    :key="item.id"
-                    :layer="item"></layer-item>
+    <svg
+      v-if="layouts.id"
+      :width="layouts.width"
+      :height="layouts.height"
+      :viewBox="`0 0 ${layouts.width} ${layouts.height}`"
+    >
+      <g>
+        <layer-item
+          v-for="item in layouts.layer"
+          :key="item.id"
+          :layer="item"
+        ></layer-item>
       </g>
     </svg>
   </g>
@@ -33,10 +38,25 @@ export default {
     }
   },
   computed: {
+    layouts() {
+      const { layout } = this;
+      if (layout.id && layout.width) {
+        return layout;
+      } else if (layout.id) {
+        const [width, height] = layout.id.split('_')[1].split('*');
+        layout.width = +width;
+        layout.height = +height;
+        return layout;
+      }
+      return {
+        ...layout,
+        width: 1,
+        height: 1
+      };
+    },
     transform() {
-      const { index, layout } = this;
-      const { width } = layout;
-      return `translate(${width * index} 0)`;
+      const { index, layouts } = this;
+      return `translate(${layouts.width * index} 0)`;
     }
   },
   components: {
