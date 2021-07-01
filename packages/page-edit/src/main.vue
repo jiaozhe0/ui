@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaozhe
  * @Date: 2021-06-23 10:55:28
- * @LastEditTime: 2021-06-30 21:30:06
+ * @LastEditTime: 2021-07-01 08:46:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/main.vue
@@ -11,7 +11,7 @@
        :style="fontSize">
     <div v-if="isLine"
          class="middle-line"></div>
-    <pg-bleed v-if="!bleed.borderWidth"
+    <pg-bleed v-if="!bleed.borderWidth && !view"
               :bleed="bleed"></pg-bleed>
     <pg-ridge v-if="page.ridgeWidth"
               :page="page"

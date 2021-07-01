@@ -1,17 +1,17 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 16:15:03
- * @LastEditTime: 2021-06-30 18:21:38
+ * @LastEditTime: 2021-06-30 22:49:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layout.vue
 -->
 <template>
   <div
+    :data-index="layoutIndex"
     :class="['pg-layout-item', { checked: checked, fill: layout.fill }]"
-    data-type="clear"
   >
-    <div v-if="layout.id" class="layout-item-content">
+    <div v-if="layout.id" class="layout-item-content" data-type="clear">
       <pg-layer
         v-for="layer in layout.layer"
         :key="layer.id"
