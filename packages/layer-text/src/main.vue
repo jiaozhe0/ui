@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 12:01:55
- * @LastEditTime: 2021-06-28 22:07:59
+ * @LastEditTime: 2021-07-01 22:12:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/layer-text/src/main.vue
@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: 'ElLayerText',
+  name: 'FcLayerText',
   props: {
     layer: Object,
     scale: {

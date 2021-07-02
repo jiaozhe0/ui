@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 22:09:03
- * @LastEditTime: 2021-06-29 18:51:36
+ * @LastEditTime: 2021-07-02 08:38:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-svg/src/main.vue
@@ -16,7 +16,7 @@
           :height="page.height"
           fill="#fff"></rect>
     <layout-item v-for="(item, index) in layers"
-                 :key="item.item + index"
+                 :key="item.fill+index"
                  :index="index"
                  :layout="item"></layout-item>
   </svg>

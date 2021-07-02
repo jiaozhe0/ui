@@ -1,25 +1,21 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 22:23:52
- * @LastEditTime: 2021-07-01 17:57:13
+ * @LastEditTime: 2021-07-02 08:37:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-svg/src/layout.vue
 -->
 <template>
   <g :transform="transform">
-    <svg
-      v-if="layouts.id"
-      :width="layouts.width"
-      :height="layouts.height"
-      :viewBox="`0 0 ${layouts.width} ${layouts.height}`"
-    >
+    <svg v-if="layouts.id"
+         :width="layouts.width"
+         :height="layouts.height"
+         :viewBox="`0 0 ${layouts.width} ${layouts.height}`">
       <g>
-        <layer-item
-          v-for="item in layouts.layer"
-          :key="item.id"
-          :layer="item"
-        ></layer-item>
+        <layer-item v-for="item in layouts.layer"
+                    :key="item.id"
+                    :layer="item"></layer-item>
       </g>
     </svg>
   </g>

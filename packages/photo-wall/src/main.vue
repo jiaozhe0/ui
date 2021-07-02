@@ -1,24 +1,22 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 10:33:16
- * @LastEditTime: 2021-07-01 09:47:02
+ * @LastEditTime: 2021-07-01 19:41:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/photo-wall/src/main.vue
 -->
 <template>
-  <div class="el-photo-wall" :style="position">
-    <!-- <div class="photo-wall-content"
-         :style="position"> -->
-    <div
-      v-for="(page, index) in pageList"
-      :key="page.id"
-      :style="{ left: page.x + 'em', top: page.y + 'em' }"
-      @click="handleClick(page.id)"
-      class="photo-wall-item"
-    >
-      <fc-page-edit :page="page" :scale="scale"></fc-page-edit>
-      <!-- </div> -->
+  <div class="el-photo-wall"
+       :style="position"
+       data-type="clear">
+    <div v-for="(page, index) in pageList"
+         :key="page.id"
+         :style="{ left: page.x + 'em', top: page.y + 'em' }"
+         @click="handleClick(page.id)"
+         class="photo-wall-item">
+      <fc-page-edit :page="page"
+                    :scale="scale"></fc-page-edit>
     </div>
   </div>
 </template>

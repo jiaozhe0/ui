@@ -1,28 +1,28 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 16:15:03
- * @LastEditTime: 2021-06-30 22:49:28
+ * @LastEditTime: 2021-07-01 21:16:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layout.vue
 -->
 <template>
-  <div
-    :data-index="layoutIndex"
-    :class="['pg-layout-item', { checked: checked, fill: layout.fill }]"
-  >
-    <div v-if="layout.id" class="layout-item-content" data-type="clear">
-      <pg-layer
-        v-for="layer in layout.layer"
-        :key="layer.id"
-        :layoutIndex="layoutIndex"
-        :pageId="pageId"
-        :bleed="bleed"
-        :scale="scale"
-        :layer="layer"
-      ></pg-layer>
+  <div :data-index="layoutIndex"
+       :class="['pg-layout-item', { checked: checked, fill: layout.fill }]"
+       data-type="clear">
+    <div v-if="layout.id"
+         class="layout-item-content"
+         data-type="clear">
+      <pg-layer v-for="layer in layout.layer"
+                :key="layer.id"
+                :layoutIndex="layoutIndex"
+                :pageId="pageId"
+                :bleed="bleed"
+                :scale="scale"
+                :layer="layer"></pg-layer>
     </div>
-    <div v-else class="layout-item-empty">
+    <div v-else
+         class="layout-item-empty">
       拖着图片，智能填充
     </div>
   </div>
