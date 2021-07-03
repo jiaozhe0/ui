@@ -19,7 +19,7 @@ const install = function(Vue, opts = {}) {
   });
 }
 export default {
-  version: '1.0.2-13',
+  version: '1.0.2-14',
   install,
   PageEdit,
   LayerPhoto,
