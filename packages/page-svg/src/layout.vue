@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 22:23:52
- * @LastEditTime: 2021-07-02 08:37:58
+ * @LastEditTime: 2021-07-17 15:33:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-svg/src/layout.vue
@@ -26,7 +26,14 @@ import LayerItem from './layer';
 export default {
   props: {
     layout: {
-      type: Object
+      type: Object,
+      default() {
+        return {
+          id: Math.random(),
+          width: 1,
+          height: 1
+        };
+      }
     },
     index: {
       type: Number,
@@ -36,7 +43,7 @@ export default {
   computed: {
     layouts() {
       const { layout } = this;
-      if (layout.id && layout.width) {
+      if (layout.width) {
         return layout;
       } else if (layout.id) {
         const [width, height] = layout.id.split('_')[1].split('*');

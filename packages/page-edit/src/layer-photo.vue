@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:11:07
- * @LastEditTime: 2021-06-30 18:59:10
+ * @LastEditTime: 2021-07-03 16:52:49
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer-photo.vue
@@ -15,13 +15,14 @@
     data-move="true"
   >
     <div v-if="bleed.borderWidth" :style="bleedVal" class="bleed"></div>
-    <div class="pg-layer-mask" v-if="layer.data">
-      <div
-        :data-pageid="pageId"
-        :data-layerid="layerId"
-        class="centre"
-        data-type="layer"
-      >
+    <div
+      class="pg-layer-mask"
+      v-if="layer.data"
+      data-type="layer"
+      :data-pageid="pageId"
+      :data-layerid="layerId"
+    >
+      <div class="centre">
         点击编辑
       </div>
     </div>

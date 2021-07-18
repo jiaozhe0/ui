@@ -323,6 +323,10 @@
             {
               "path": "/page-svg",
               "title": "PageSvg SVG作品页"
+            },
+            {
+              "path": "/photo-album",
+              "title": "PhotoAlbum"
             }
           ]
         }
@@ -653,6 +657,10 @@
             {
               "path": "/page-svg",
               "title": "PageSvg"
+            },
+            {
+              "path": "/photo-album",
+              "title": "PhotoAlbum"
             }
           ]
         }
@@ -983,6 +991,10 @@
             {
               "path": "/page-svg",
               "title": "PageSvg"
+            },
+            {
+              "path": "/photo-album",
+              "title": "PhotoAlbum"
             }
           ]
         }
@@ -1313,6 +1325,10 @@
             {
               "path": "/page-svg",
               "title": "PageSvg"
+            },
+            {
+              "path": "/photo-album",
+              "title": "PhotoAlbum"
             }
           ]
         }

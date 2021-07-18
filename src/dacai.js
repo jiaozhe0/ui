@@ -5,13 +5,15 @@ import LayerText from '../packages/layer-text/index.js';
 import PhotoWall from '../packages/photo-wall/index.js';
 import LayerImage from '../packages/layer-image/index.js';
 import PageSvg from '../packages/page-svg/index.js';
+import PhotoAlbum from '../packages/photo-album/index.js';
 const components = [
     PageEdit,
   LayerPhoto,
   LayerText,
   PhotoWall,
   LayerImage,
-  PageSvg
+  PageSvg,
+  PhotoAlbum
 ]
 const install = function(Vue, opts = {}) {
   components.forEach(component => {
@@ -26,5 +28,6 @@ export default {
   LayerText,
   PhotoWall,
   LayerImage,
-  PageSvg
+  PageSvg,
+  PhotoAlbum
 }

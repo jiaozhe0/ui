@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 22:09:03
- * @LastEditTime: 2021-07-02 08:38:14
+ * @LastEditTime: 2021-07-18 13:47:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-svg/src/main.vue
@@ -40,10 +40,7 @@ export default {
       default: -1
     },
     page: {
-      type: Object,
-      default: {
-        layers: []
-      }
+      type: Object
     }
   },
   components: {

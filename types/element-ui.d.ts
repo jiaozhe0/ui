@@ -91,6 +91,7 @@ import { FcLayerText } from './layer-text'
 import { FcPhotoWall } from './photo-wall'
 import { FcLayerImage } from './layerImage'
 import { FcPageSvg } from './page-svg'
+import { FcPhotoAlbum } from './photo-album'
 
 export interface InstallationOptions {
   locale: any,
@@ -388,3 +389,6 @@ export class LayerImage extends ElLayerImage {}
 
 /** PageSvg Component */
 export class PageSvg extends ElPageSvg {}
+
+/** PhotoAlbum Component */
+export class PhotoAlbum extends ElPhotoAlbum {}
