@@ -3,7 +3,6 @@
 
 @include b(photo-album) {
   position: relative;
-
   .prev-btn,
   .next-btn {
     position: absolute;
@@ -45,45 +44,56 @@
   .left-side {
     &::before {
       left: 0;
-      background-image: -webkit-gradient(linear,
-          left top,
-          right top,
-          color-stop(0.95, transparent),
-          color-stop(1, #dadada));
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0.95, transparent),
+        color-stop(1, #dadada)
+      );
     }
 
     &::after {
-      left: 0;
+      left: -5px;
       width: 5px;
-      -webkit-box-shadow: 1px 0 1px rgb(0, 0, 0 / 15%), 4px 0 0 0 #eee,
+      -webkit-box-shadow: 1px 0 1px 0 rgb(0, 0, 0 / 15%), 4px 0 0 0 #eee,
         4px 0 1px 0 rgb(0, 0, 0 / 15%), 8px 0 0 0 #eee,
-        8px 0 1px 0 rgb(0, 0, 0 / 15%), 9px 0 0 0 #eee;
+        8px 0 1px rgb(0, 0, 0 / 15%), 9px 0 0 0 #eee;
+      z-index: 9;
     }
   }
 
   .right-side {
-    right: 0;
+    right: 0px;
 
     &::before {
       left: -0;
-      background-image: -webkit-linear-gradient(right,
-          transparent 95%,
-          #cacaca);
+      background-image: -webkit-linear-gradient(
+        right,
+        transparent 95%,
+        #cacaca
+      );
     }
 
     &::after {
-      right: 5px;
+      right: 0px;
       width: 5px;
       -webkit-box-shadow: 1px 0 1px rgb(0, 0, 0 / 15%), 4px 0 0 0 #eee,
         4px 0 1px 0 rgb(0, 0, 0 / 15%), 8px 0 0 0 #eee,
         8px 0 1px 0 rgb(0, 0, 0 / 15%), 9px 0 0 0 #eee;
     }
   }
-
+  .photo-ablum-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    overflow: hidden;
+  }
   .photo-album-view {
     position: absolute;
     left: -40em;
-    top: -40em
+    top: -40em;
   }
 
   .photo-album-item {
@@ -95,10 +105,6 @@
     height: 100%;
     perspective: 1500px;
     perspective-origin: center center;
-    // transform-style: preserve-3d;
-    // -webkit-transform-style: preserve-3d;
-    /* Safari 和 Chrome */
-    // -moz-transform-style: preserve-3d;
     overflow: hidden;
   }
 
@@ -114,8 +120,7 @@
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    /* Safari 和 Chrome */
+    -webkit-transform-style: preserve-3d; /* Safari 和 Chrome */
     -moz-transform-style: preserve-3d;
 
     background: #fff;
@@ -132,14 +137,16 @@
 
     &.left {
       left: 0;
-      -webkit-transform-origin: right center;
-      transform-origin: right center;
+      transform-origin: right;
+      -webkit-transform-origin: right; /* Safari 和 Chrome */
+      -moz-transform-origin: right;
     }
 
     &.right {
       left: 50%;
       transform-origin: left center;
-      -webkit-transform-origin: left center;
+      -webkit-transform-origin: left; /* Safari 和 Chrome */
+      -moz-transform-origin: left;
 
       .fill {
         left: -100%;
@@ -151,6 +158,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      overflow: hidden;
       z-index: 1;
     }
 
