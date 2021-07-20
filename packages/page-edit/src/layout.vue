@@ -23,7 +23,7 @@
     </div>
     <div v-else
          class="layout-item-empty">
-      拖着图片，智能填充
+      点击或拖拽左侧图片，智能创建页面
     </div>
   </div>
 </template>

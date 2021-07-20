@@ -1,14 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2021-07-16 08:53:22
- * @LastEditTime: 2021-07-18 17:56:01
+ * @LastEditTime: 2021-07-19 19:16:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/photo-album/src/main.vue
 -->
 <template>
   <div class="el-photo-album"
-       :style="position">
+       :style="size">
     <div class="prev-btn"
          @click="prev"></div>
     <div class="next-btn"
@@ -86,11 +86,24 @@ export default {
     backLayers() {
       return this.getPage(this.backIndex);
     },
-    position() {
-      const { list, scale } = this;
-      const { width, height } = list[2];
+    size() {
+      const { frame, scale } = this;
+      const { productSize, bleed } = frame;
+      const { width, height } = productSize;
+      const pxBleed = bleed[0] * 2 * 11.8;
       return {
         fontSize: scale + 'px',
+        height: height - pxBleed + 'em',
+        width: width - pxBleed + 'em'
+      };
+    },
+    position() {
+      const { productSize, bleed } = this.frame;
+      const { width, height } = productSize;
+      const pxBleed = bleed[0] * 11.8;
+      return {
+        left: -pxBleed + 'em',
+        top: -pxBleed + 'em',
         width: width + 'em',
         height: height + 'em'
       };
