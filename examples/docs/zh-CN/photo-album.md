@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 12:01:55
- * @LastEditTime: 2021-07-20 12:31:05
+ * @LastEditTime: 2021-07-23 09:11:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/page-edit.md
@@ -18,7 +18,7 @@
   <el-col :span="12" class="test">
     <fc-photo-album
       :pageList="list"
-      :scale="0.1"
+      :scale="0.16"
       :frame="frame"
     ></fc-photo-album>
   </el-col>

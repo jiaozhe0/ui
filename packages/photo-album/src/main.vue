@@ -1,38 +1,42 @@
 <!--
  * @Author: your name
  * @Date: 2021-07-16 08:53:22
- * @LastEditTime: 2021-07-19 19:16:22
+ * @LastEditTime: 2021-07-23 09:04:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/photo-album/src/main.vue
 -->
 <template>
-  <div class="el-photo-album" :style="size">
-    <div class="prev-btn" @click="prev"></div>
-    <div class="next-btn" @click="next"></div>
+  <div class="el-photo-album"
+       :style="size">
+    <div class="prev-btn"
+         @click="prev"></div>
+    <div class="next-btn"
+         @click="next"></div>
     <div class="left-side"></div>
     <div class="right-side"></div>
-    <div class="photo-ablum-wrap">
-      <div class="photo-album-view" :style="position">
-        <div class="photo-album-item" id="front-page" style="z-index: 1">
-          <album-item
-            v-for="(item, index) in frontLayers"
-            :key="'f' + item.id + index"
-            :layout="item"
-            :backLayout="backLayout"
-            :scale="scale"
-            :index="index"
-          ></album-item>
+    <div class="photo-ablum-outside">
+      <div class="photo-album-inside"
+           :style="position">
+        <div class="photo-album-item"
+             id="front-page"
+             style="z-index: 1">
+          <album-item v-for="(item, index) in frontLayers"
+                      :key="'f' + item.id + index"
+                      :layout="item"
+                      :backLayout="backLayout"
+                      :scale="scale"
+                      :index="index"></album-item>
         </div>
-        <div class="photo-album-item" id="back-page" style="z-index: 0">
-          <album-item
-            v-for="(item, index) in backLayers"
-            :key="'b' + item.id + index"
-            :layout="item"
-            :backLayout="backLayout"
-            :scale="scale"
-            :index="index"
-          ></album-item>
+        <div class="photo-album-item"
+             id="back-page"
+             style="z-index: 0">
+          <album-item v-for="(item, index) in backLayers"
+                      :key="'b' + item.id + index"
+                      :layout="item"
+                      :backLayout="backLayout"
+                      :scale="scale"
+                      :index="index"></album-item>
         </div>
       </div>
     </div>
