@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 12:01:55
- * @LastEditTime: 2021-07-23 09:11:56
+ * @LastEditTime: 2021-07-24 10:48:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/page-edit.md
@@ -43,723 +43,1033 @@
           border: [],
           output: '',
           productSize: {
-            height: 3543,
-            width: 7086
+            height: 2361,
+            width: 4722
           },
           type: 'photo_album'
         },
-        is_group: 0,
-        opus_id: '0-550',
-        customer_id: 139,
         page_info: {
-          id: '0-550',
+          id: '0-643',
           pagesObj: {
-            '0-548_首页': {
-              id: '0-548_首页',
+            '0-643_首页': {
+              id: '0-643_首页',
               name: '首页',
               isFixed: true,
               layers: [
                 {
-                  id: '1_3543*3543_2',
-                  fill: false,
-                  match: [0, 0, 1],
+                  id: '1_4724*2362_1',
+                  fill: true,
+                  match: [0, 1, 0],
                   layer: [
                     {
-                      x: 0,
-                      y: 0,
-                      width: 3543,
-                      height: 3543,
+                      x: 3033,
+                      y: 416,
+                      width: 1019,
+                      height: 1529,
+                      type: 'photo',
                       align: 0,
                       zIndex: 1,
-                      type: 'photo',
-                      shape: 2,
-                      id: '1_3543*3543_1_1',
+                      shape: 1,
+                      id: '1_4724*2362_1_1',
                       data: {
                         scale: 1,
-                        naturalH: '4016',
-                        naturalW: '6016',
+                        naturalH: '3508',
+                        naturalW: '2362',
                         rotate: 0,
                         photoUrl:
-                          'phosee/undefined/6c12216e9a984b709_FCY (28).jpg',
-                        photoId: '6c12216e9a984b709',
-                        shape: 0,
-                        fileName: 'FCY (28).jpg',
+                          'phosee/undefined/28da06fc4c8b427c8__R172277.jpg',
+                        photoId: '28da06fc4c8b427c8',
+                        shape: 1,
+                        fileName: '_R172277.jpg',
                         result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/6c12216e9a984b709_FCY (28).jpg?imageView2/2/w/800/h/800',
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/28da06fc4c8b427c8__R172277.jpg?imageView2/2/w/800/h/800',
                         orientation: '',
-                        date: '2020/10/24 15:43:08',
+                        date: '2021/06/21 22:32:44',
                         is_qiniu: 1,
                         company: 'admin',
-                        x: 882.2211155378486,
+                        x: 5.251710376282745,
                         y: 0,
-                        width: 5307.442231075697,
-                        height: 3543,
-                        initialW: 5307.442231075697,
-                        initialH: 3543,
+                        width: 1029.5034207525655,
+                        height: 1529,
+                        initialW: 1029.5034207525655,
+                        initialH: 1529,
                         invalid: true
                       }
                     }
                   ],
-                  width: 3543,
-                  height: 3543,
-                  sucai: []
-                },
-                {
-                  id: '1_3543*3543_14',
-                  fill: false,
-                  match: [1, 0, 0],
-                  layer: [
+                  width: 4724,
+                  height: 2362,
+                  sucai: [
                     {
-                      x: 298,
-                      y: 298,
-                      width: 2947,
-                      height: 1965,
-                      align: 0,
-                      zIndex: 1,
-                      type: 'photo',
-                      shape: 0,
-                      id: '1_3543*3543_1_1'
-                    }
-                  ],
-                  width: 3543,
-                  height: 3543,
-                  sucai: []
-                }
-              ],
-              width: 7087,
-              height: 3543,
-              isPaper: true
-            },
-            '0-548_2': {
-              id: '0-548_2',
-              layers: [
-                {
-                  id: '1_3543*3543_5',
-                  fill: false,
-                  match: [1, 0, 0],
-                  layer: [
-                    {
-                      x: 416,
-                      y: 868,
-                      width: 2711,
-                      height: 1807,
-                      align: 0,
-                      zIndex: 1,
-                      type: 'photo',
-                      shape: 0,
-                      id: '1_3543*3543_1_1',
-                      data: {
-                        scale: 1,
-                        naturalH: '1122',
-                        naturalW: '1571',
-                        rotate: 0,
-                        photoUrl: 'phosee/undefined/bba44da93a0b41fd8_2.jpg',
-                        photoId: 'bba44da93a0b41fd8',
-                        shape: 0,
-                        fileName: '2.jpg',
-                        result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/bba44da93a0b41fd8_2.jpg?imageView2/2/w/800/h/800',
-                        orientation: '',
-                        date: '2020/12/17 09:50:01',
-                        is_qiniu: 1,
-                        company: 'admin',
-                        x: 0,
-                        y: 64.59102482495234,
-                        width: 2711,
-                        height: 1936.1820496499047,
-                        initialW: 2711,
-                        initialH: 1936.1820496499047,
-                        invalid: false
-                      }
-                    }
-                  ],
-                  width: 3543,
-                  height: 3543,
-                  sucai: []
-                },
-                {
-                  id: '1_3543*3543_5',
-                  fill: false,
-                  match: [1, 0, 0],
-                  layer: [
-                    {
-                      x: 416,
-                      y: 868,
-                      width: 2711,
-                      height: 1807,
-                      align: 0,
-                      zIndex: 1,
-                      type: 'photo',
-                      shape: 0,
-                      id: '1_3543*3543_1_1',
-                      data: {
-                        scale: 1,
-                        naturalH: '1122',
-                        naturalW: '1571',
-                        rotate: 0,
-                        photoUrl: 'phosee/undefined/e404a909760c4e7fb_3.jpg',
-                        photoId: 'e404a909760c4e7fb',
-                        shape: 0,
-                        fileName: '3.jpg',
-                        result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/e404a909760c4e7fb_3.jpg?imageView2/2/w/800/h/800',
-                        orientation: '',
-                        date: '2020/12/17 09:50:32',
-                        is_qiniu: 1,
-                        company: 'admin',
-                        x: 0,
-                        y: 64.59102482495234,
-                        width: 2711,
-                        height: 1936.1820496499047,
-                        initialW: 2711,
-                        initialH: 1936.1820496499047,
-                        invalid: false
-                      }
-                    }
-                  ],
-                  width: 3543,
-                  height: 3543,
-                  sucai: []
-                }
-              ],
-              width: 7086,
-              height: 3543
-            },
-            '0-548_3': {
-              id: '0-548_3',
-              layers: [
-                {
-                  id: '1_3543*3543_2',
-                  fill: false,
-                  match: [0, 0, 1],
-                  layer: [
-                    {
-                      x: 0,
-                      y: 0,
-                      width: 3543,
-                      height: 3543,
-                      align: 0,
-                      zIndex: 1,
-                      type: 'photo',
-                      shape: 2,
-                      id: '1_3543*3543_1_1',
-                      data: {
-                        scale: 1,
-                        naturalH: '4016',
-                        naturalW: '6016',
-                        rotate: 0,
-                        photoUrl:
-                          'phosee/undefined/8de99033c37d4d4b8_FCY (20).jpg',
-                        photoId: '8de99033c37d4d4b8',
-                        shape: 0,
-                        fileName: 'FCY (20).jpg',
-                        result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/8de99033c37d4d4b8_FCY (20).jpg?imageView2/2/w/800/h/800',
-                        orientation: '',
-                        date: '2020/10/24 15:43:53',
-                        is_qiniu: 1,
-                        company: 'admin',
-                        x: 882.2211155378486,
-                        y: 0,
-                        width: 5307.442231075697,
-                        height: 3543,
-                        initialW: 5307.442231075697,
-                        initialH: 3543,
-                        invalid: true
-                      }
-                    }
-                  ],
-                  width: 3543,
-                  height: 3543,
-                  sucai: []
-                },
-                {
-                  id: '1_3543*3543_5',
-                  fill: false,
-                  match: [1, 0, 0],
-                  layer: [
-                    {
-                      x: 416,
-                      y: 868,
-                      width: 2711,
-                      height: 1807,
-                      align: 0,
-                      zIndex: 1,
-                      type: 'photo',
-                      shape: 0,
-                      id: '1_3543*3543_1_1',
-                      data: {
-                        scale: 1,
-                        naturalH: '1122',
-                        naturalW: '1571',
-                        rotate: 0,
-                        photoUrl: 'phosee/undefined/e404a909760c4e7fb_3.jpg',
-                        photoId: 'e404a909760c4e7fb',
-                        shape: 0,
-                        fileName: '3.jpg',
-                        result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/e404a909760c4e7fb_3.jpg?imageView2/2/w/800/h/800',
-                        orientation: '',
-                        date: '2020/12/17 09:50:32',
-                        is_qiniu: 1,
-                        company: 'admin',
-                        x: 0,
-                        y: 64.59102482495234,
-                        width: 2711,
-                        height: 1936.1820496499047,
-                        initialW: 2711,
-                        initialH: 1936.1820496499047,
-                        invalid: false
-                      }
-                    }
-                  ],
-                  width: 3543,
-                  height: 3543,
-                  sucai: []
-                }
-              ],
-              width: 7086,
-              height: 3543
-            },
-            '0-548_4': {
-              id: '0-548_4',
-              layers: [
-                {
-                  id: '1_3543*3543_7',
-                  fill: false,
-                  match: [1, 0, 0],
-                  layer: [
-                    {
-                      x: 103.14653624795397,
-                      y: 348.6271186440679,
-                      width: 2419.8870056497176,
-                      height: 1613.531715677535,
-                      align: 0,
-                      zIndex: 1,
-                      type: 'photo',
-                      shape: 0,
-                      id: '1_3543*3543_1_1',
-                      data: {
-                        scale: 1,
-                        naturalH: '4016',
-                        naturalW: '6016',
-                        rotate: 0,
-                        photoUrl:
-                          'phosee/undefined/6c12216e9a984b709_FCY (28).jpg',
-                        photoId: '6c12216e9a984b709',
-                        shape: 0,
-                        fileName: 'FCY (28).jpg',
-                        result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/6c12216e9a984b709_FCY (28).jpg?imageView2/2/w/800/h/800',
-                        orientation: '',
-                        date: '2020/10/24 15:43:08',
-                        is_qiniu: 1,
-                        company: 'admin',
-                        x: 0,
-                        y: 0,
-                        width: 2419.8870056497176,
-                        height: 1615.403293665104,
-                        initialW: 2947,
-                        initialH: 1967.279255319149,
-                        invalid: true
-                      }
-                    }
-                  ],
-                  width: 3543,
-                  height: 3543,
-                  sucai: []
-                },
-                {
-                  width: 3543,
-                  height: 3543,
-                  fill: false,
-                  id: '9cf43313020b411f8',
-                  isAdd: true,
-                  layer: [
-                    {
-                      id: '9cf43313020b411f8_text',
-                      type: 'text',
-                      width: 1771.5,
-                      height: 121,
-                      x: 885.75,
-                      y: 1721.5,
-                      data: {
-                        style: {
-                          'font-family':
-                            '-apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif',
-                          'text-align': 'center',
-                          'letter-spacing': '1px',
-                          'font-size': '116.67px',
-                          'line-height': 1,
-                          color: '#000'
-                        },
-                        renderContent:
-                          '<p style="font-family:-apple-system; Noto Sans; Helvetica Neue; Helvetica; Nimbus Sans L; Arial; Liberation Sans; PingFang SC; Hiragino Sans GB; Noto Sans CJK SC; Source Han Sans SC; Source Han Sans CN; Microsoft YaHei; Wenquanyi Micro Hei; WenQuanYi Zen Hei; ST Heiti; SimHei; WenQuanYi Zen Hei Sharp; sans-serif;text-align:center;letter-spacing:1px;font-size:116.67px;line-height:1;color:#000"><span>双击sdjfasdjflakjs ;lfk文字</span></p>'
-                      }
+                      id: '51-1_4724*2362_1',
+                      x: 1500,
+                      y: 172,
+                      width: 187,
+                      height: 388,
+                      title: '散文集',
+                      type: 'sucai',
+                      suolue_url:
+                        'http://image.fangcunwuzao.com/phosee/sucai/common/1624594628_38853_568_suolue.jpg',
+                      yuantu_url:
+                        'http://image.fangcunwuzao.com/phosee/sucai/common/1624594628_38853_568.jpg'
                     }
                   ]
                 }
               ],
-              width: 7086,
-              height: 3543
+              width: 4724,
+              height: 2362,
+              isPaper: true
             },
-            '0-548_5': {
-              id: '0-548_5',
+            '0-643_2': {
+              id: '0-643_2',
               layers: [
                 {
-                  id: '1_3543*3543_3',
+                  id: '1_2361*2361_23',
                   fill: false,
-                  match: [0, 0, 1],
+                  match: [0, 1, 0],
                   layer: [
                     {
-                      x: 298,
-                      y: 298,
-                      width: 2947,
-                      height: 2947,
+                      x: 416,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
                       align: 0,
                       zIndex: 1,
                       type: 'photo',
-                      shape: 2,
-                      id: '1_3543*3543_1_1',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
                       data: {
                         scale: 1,
-                        naturalH: '4016',
-                        naturalW: '6016',
+                        naturalH: '3508',
+                        naturalW: '2362',
                         rotate: 0,
                         photoUrl:
-                          'phosee/undefined/6c12216e9a984b709_FCY (28).jpg',
-                        photoId: '6c12216e9a984b709',
-                        shape: 0,
-                        fileName: 'FCY (28).jpg',
+                          'phosee/undefined/28da06fc4c8b427c8__R172277.jpg',
+                        photoId: '28da06fc4c8b427c8',
+                        shape: 1,
+                        fileName: '_R172277.jpg',
                         result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/6c12216e9a984b709_FCY (28).jpg?imageView2/2/w/800/h/800',
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/28da06fc4c8b427c8__R172277.jpg?imageView2/2/w/800/h/800',
                         orientation: '',
-                        date: '2020/10/24 15:43:08',
+                        date: '2021/06/21 22:32:44',
                         is_qiniu: 1,
                         company: 'admin',
-                        x: 733.8147410358565,
+                        x: 5.048460661345473,
                         y: 0,
-                        width: 4414.629482071713,
-                        height: 2947,
-                        initialW: 4414.629482071713,
-                        initialH: 2947,
+                        width: 1022.096921322691,
+                        height: 1518,
+                        initialW: 1022.096921322691,
+                        initialH: 1518,
                         invalid: true
                       }
                     }
                   ],
-                  width: 3543,
-                  height: 3543,
+                  width: 2361,
+                  height: 2361,
                   sucai: []
                 },
                 {
-                  id: '1_3543*3543_10',
+                  id: '1_2361*2361_5',
                   fill: false,
                   match: [1, 0, 0],
                   layer: [
                     {
-                      x: 180,
-                      y: 180,
-                      width: 3183,
-                      height: 2122,
+                      x: 745.7626624694592,
+                      y: 587.6453780933343,
+                      width: 875.5904237800906,
+                      height: 1352.0756268730695,
                       align: 0,
                       zIndex: 1,
                       type: 'photo',
                       shape: 0,
-                      id: '1_3543*3543_1_1',
+                      id: '1_2361*2361_1_1',
                       data: {
                         scale: 1,
-                        naturalH: '4016',
-                        naturalW: '6016',
+                        naturalH: '3264',
+                        naturalW: '4928',
                         rotate: 0,
                         photoUrl:
-                          'phosee/undefined/8de99033c37d4d4b8_FCY (20).jpg',
-                        photoId: '8de99033c37d4d4b8',
+                          'phosee/undefined/f7c3af14cd95405f8__R172424.jpg',
+                        photoId: 'f7c3af14cd95405f8',
                         shape: 0,
-                        fileName: 'FCY (20).jpg',
+                        fileName: '_R172424.jpg',
                         result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/8de99033c37d4d4b8_FCY (20).jpg?imageView2/2/w/800/h/800',
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/f7c3af14cd95405f8__R172424.jpg?imageView2/2/w/800/h/800',
                         orientation: '',
-                        date: '2020/10/24 15:43:53',
+                        date: '2021/07/12 20:27:15',
                         is_qiniu: 1,
                         company: 'admin',
-                        x: 0,
-                        y: 1.4109042553191102,
-                        width: 3183,
-                        height: 2124.821808510638,
-                        initialW: 3183,
-                        initialH: 2124.821808510638,
+                        x: 520.1224587994708,
+                        y: 0,
+                        width: 2041.3690837103206,
+                        height: 1352.0756268730695,
+                        initialW: 1536.9803921568628,
+                        initialH: 1018,
                         invalid: true
                       }
                     }
                   ],
-                  width: 3543,
-                  height: 3543,
+                  width: 2361,
+                  height: 2361,
                   sucai: []
                 }
               ],
-              width: 7086,
-              height: 3543
+              width: 4722,
+              height: 2361
             },
-            '0-548_6': {
-              id: '0-548_6',
+            '0-643_3': {
+              id: '0-643_3',
               layers: [
                 {
-                  id: '1_3543*3543_5',
+                  id: '1_2361*2361_23',
                   fill: false,
-                  match: [1, 0, 0],
+                  match: [0, 1, 0],
                   layer: [
                     {
                       x: 416,
-                      y: 868,
-                      width: 2711,
-                      height: 1807,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
                       align: 0,
                       zIndex: 1,
                       type: 'photo',
-                      shape: 0,
-                      id: '1_3543*3543_1_1',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
                       data: {
                         scale: 1,
-                        naturalH: '1122',
-                        naturalW: '1571',
+                        naturalH: '3482',
+                        naturalW: '2362',
                         rotate: 0,
-                        photoUrl: 'phosee/undefined/e404a909760c4e7fb_3.jpg',
-                        photoId: 'e404a909760c4e7fb',
-                        shape: 0,
-                        fileName: '3.jpg',
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
                         result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/e404a909760c4e7fb_3.jpg?imageView2/2/w/800/h/800',
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
                         orientation: '',
-                        date: '2020/12/17 09:50:32',
+                        date: '2021/06/21 20:59:37',
                         is_qiniu: 1,
                         company: 'admin',
-                        x: 0,
-                        y: 64.59102482495234,
-                        width: 2711,
-                        height: 1936.1820496499047,
-                        initialW: 2711,
-                        initialH: 1936.1820496499047,
-                        invalid: false
+                        x: 8.864445720850085,
+                        y: 0,
+                        width: 1029.7288914417002,
+                        height: 1518,
+                        initialW: 1029.7288914417002,
+                        initialH: 1518,
+                        invalid: true
                       }
                     }
                   ],
-                  width: 3543,
-                  height: 3543,
+                  width: 2361,
+                  height: 2361,
                   sucai: []
                 },
                 {
-                  id: '2_3543*3543_258752',
+                  id: '1_2361*2361_23',
                   fill: false,
-                  match: [2, 0, 0],
+                  match: [0, 1, 0],
                   layer: [
                     {
                       x: 416,
-                      y: 1321,
-                      width: 1350,
-                      height: 900,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
                       align: 0,
                       zIndex: 1,
                       type: 'photo',
-                      shape: 0,
-                      id: '2_3543*3543_1_2',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
                       data: {
                         scale: 1,
-                        naturalH: '1122',
-                        naturalW: '1571',
+                        naturalH: '3482',
+                        naturalW: '2362',
                         rotate: 0,
-                        photoUrl: 'phosee/undefined/bba44da93a0b41fd8_2.jpg',
-                        photoId: 'bba44da93a0b41fd8',
-                        shape: 0,
-                        fileName: '2.jpg',
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
                         result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/bba44da93a0b41fd8_2.jpg?imageView2/2/w/800/h/800',
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
                         orientation: '',
-                        date: '2020/12/17 09:50:01',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 8.864445720850085,
+                        y: 0,
+                        width: 1029.7288914417002,
+                        height: 1518,
+                        initialW: 1029.7288914417002,
+                        initialH: 1518,
+                        invalid: true
+                      }
+                    }
+                  ],
+                  width: 2361,
+                  height: 2361,
+                  sucai: []
+                }
+              ],
+              width: 4722,
+              height: 2361
+            },
+            '0-643_4': {
+              id: '0-643_4',
+              layers: [
+                {
+                  id: '1_2361*2361_23',
+                  fill: false,
+                  match: [0, 1, 0],
+                  layer: [
+                    {
+                      x: 416,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
+                      align: 0,
+                      zIndex: 1,
+                      type: 'photo',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 8.864445720850085,
+                        y: 0,
+                        width: 1029.7288914417002,
+                        height: 1518,
+                        initialW: 1029.7288914417002,
+                        initialH: 1518,
+                        invalid: true
+                      }
+                    }
+                  ],
+                  width: 2361,
+                  height: 2361,
+                  sucai: []
+                },
+                {
+                  id: '1_2361*2361_23',
+                  fill: false,
+                  match: [0, 1, 0],
+                  layer: [
+                    {
+                      x: 228.54820415879016,
+                      y: 425.4631379962193,
+                      width: 1913.553875236295,
+                      height: 1518,
+                      align: 0,
+                      zIndex: 1,
+                      type: 'photo',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 90,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
                         is_qiniu: 1,
                         company: 'admin',
                         x: 0,
-                        y: 32.08147676639078,
-                        width: 1350,
-                        height: 964.1629535327816,
-                        initialW: 1350,
-                        initialH: 964.1629535327816,
+                        y: 162.12145357575605,
+                        width: 1518,
+                        height: 2237.796782387807,
+                        initialW: 1518,
+                        initialH: 2237.796782387807,
+                        invalid: true
+                      }
+                    }
+                  ],
+                  width: 2361,
+                  height: 2361,
+                  sucai: []
+                }
+              ],
+              width: 4722,
+              height: 2361
+            },
+            '0-643_5': {
+              id: '0-643_5',
+              layers: [
+                {
+                  id: '1_2361*2361_23',
+                  fill: false,
+                  match: [0, 1, 0],
+                  layer: [
+                    {
+                      x: 416,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
+                      align: 0,
+                      zIndex: 1,
+                      type: 'photo',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 8.864445720850085,
+                        y: 0,
+                        width: 1029.7288914417002,
+                        height: 1518,
+                        initialW: 1029.7288914417002,
+                        initialH: 1518,
+                        invalid: true
+                      }
+                    }
+                  ],
+                  width: 2361,
+                  height: 2361,
+                  sucai: []
+                },
+                {
+                  id: '2_2361*2361_149',
+                  fill: false,
+                  match: [0, 2, 0],
+                  layer: [
+                    {
+                      x: 180,
+                      y: 435,
+                      width: 994,
+                      height: 1490,
+                      align: 0,
+                      zIndex: 1,
+                      type: 'photo',
+                      shape: 1,
+                      id: '2_2361*2361_1_2',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 8.367604824813327,
+                        y: 0,
+                        width: 1010.7352096496267,
+                        height: 1490,
+                        initialW: 1010.7352096496267,
+                        initialH: 1490,
                         invalid: true
                       }
                     },
                     {
-                      x: 1777,
-                      y: 1321,
-                      width: 1350,
-                      height: 900,
+                      x: 1185,
+                      y: 435,
+                      width: 995,
+                      height: 1490,
                       align: 0,
                       zIndex: 1,
                       type: 'photo',
-                      shape: 0,
-                      id: '2_3543*3543_1_1',
+                      shape: 1,
+                      id: '2_2361*2361_1_1',
                       data: {
                         scale: 1,
-                        naturalH: '4016',
-                        naturalW: '6016',
+                        naturalH: '3482',
+                        naturalW: '2362',
                         rotate: 0,
                         photoUrl:
-                          'phosee/undefined/6c12216e9a984b709_FCY (28).jpg',
-                        photoId: '6c12216e9a984b709',
-                        shape: 0,
-                        fileName: 'FCY (28).jpg',
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
                         result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/6c12216e9a984b709_FCY (28).jpg?imageView2/2/w/800/h/800',
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
                         orientation: '',
-                        date: '2020/10/24 15:43:08',
+                        date: '2021/06/21 20:59:37',
                         is_qiniu: 1,
                         company: 'admin',
-                        x: 0,
-                        y: 0.5984042553191671,
-                        width: 1350,
-                        height: 901.1968085106383,
-                        initialW: 1350,
-                        initialH: 901.1968085106383,
+                        x: 7.867604824813327,
+                        y: 0,
+                        width: 1010.7352096496267,
+                        height: 1490,
+                        initialW: 1010.7352096496267,
+                        initialH: 1490,
                         invalid: true
                       }
                     }
                   ],
-                  width: 3543,
-                  height: 3543,
+                  width: 2361,
+                  height: 2361,
                   sucai: []
                 }
               ],
-              width: 7086,
-              height: 3543
+              width: 4722,
+              height: 2361
             },
-            '0-548_尾页': {
-              id: '0-548_尾页',
+            '0-643_6': {
+              id: '0-643_6',
+              layers: [
+                {
+                  id: '1_2361*2361_23',
+                  fill: false,
+                  match: [0, 1, 0],
+                  layer: [
+                    {
+                      x: 416,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
+                      align: 0,
+                      zIndex: 1,
+                      type: 'photo',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 8.864445720850085,
+                        y: 0,
+                        width: 1029.7288914417002,
+                        height: 1518,
+                        initialW: 1029.7288914417002,
+                        initialH: 1518,
+                        invalid: true
+                      }
+                    }
+                  ],
+                  width: 2361,
+                  height: 2361,
+                  sucai: []
+                },
+                {
+                  id: '1_2361*2361_23',
+                  fill: false,
+                  match: [0, 1, 0],
+                  layer: [
+                    {
+                      x: 416,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
+                      align: 0,
+                      zIndex: 1,
+                      type: 'photo',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 8.864445720850085,
+                        y: 0,
+                        width: 1029.7288914417002,
+                        height: 1518,
+                        initialW: 1029.7288914417002,
+                        initialH: 1518,
+                        invalid: true
+                      }
+                    }
+                  ],
+                  width: 2361,
+                  height: 2361,
+                  sucai: []
+                }
+              ],
+              width: 4722,
+              height: 2361
+            },
+            '0-643_7': {
+              id: '0-643_7',
+              layers: [
+                {
+                  id: '1_2361*2361_23',
+                  fill: false,
+                  match: [0, 1, 0],
+                  layer: [
+                    {
+                      x: 416,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
+                      align: 0,
+                      zIndex: 1,
+                      type: 'photo',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 8.864445720850085,
+                        y: 0,
+                        width: 1029.7288914417002,
+                        height: 1518,
+                        initialW: 1029.7288914417002,
+                        initialH: 1518,
+                        invalid: true
+                      }
+                    }
+                  ],
+                  width: 2361,
+                  height: 2361,
+                  sucai: []
+                },
+                {
+                  id: '1_2361*2361_23',
+                  fill: false,
+                  match: [0, 1, 0],
+                  layer: [
+                    {
+                      x: 416,
+                      y: 421,
+                      width: 1012,
+                      height: 1518,
+                      align: 0,
+                      zIndex: 1,
+                      type: 'photo',
+                      shape: 1,
+                      id: '1_2361*2361_1_1',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 8.864445720850085,
+                        y: 0,
+                        width: 1029.7288914417002,
+                        height: 1518,
+                        initialW: 1029.7288914417002,
+                        initialH: 1518,
+                        invalid: true
+                      }
+                    }
+                  ],
+                  width: 2361,
+                  height: 2361,
+                  sucai: []
+                }
+              ],
+              width: 4722,
+              height: 2361
+            },
+            '0-643_尾页': {
+              id: '0-643_尾页',
               name: '尾页',
               isFixed: true,
               layers: [
                 {
-                  id: '1_7087*3543_1',
+                  id: '1_4724*2362_1',
                   fill: true,
-                  match: [1, 0, 0],
+                  match: [0, 1, 0],
                   layer: [
                     {
-                      x: 416,
-                      y: 868,
-                      width: 2711,
-                      height: 1806,
+                      x: 671,
+                      y: 416,
+                      width: 1019,
+                      height: 1529,
                       type: 'photo',
                       align: 0,
                       zIndex: 1,
-                      shape: 0,
-                      id: '1_7087*3543_1_1',
+                      shape: 1,
+                      id: '1_4724*2362_1_1',
                       data: {
                         scale: 1,
-                        naturalH: '4016',
-                        naturalW: '6016',
+                        naturalH: '3264',
+                        naturalW: '4928',
                         rotate: 0,
                         photoUrl:
-                          'phosee/undefined/6c12216e9a984b709_FCY (28).jpg',
-                        photoId: '6c12216e9a984b709',
+                          'phosee/undefined/f7c3af14cd95405f8__R172424.jpg',
+                        photoId: 'f7c3af14cd95405f8',
                         shape: 0,
-                        fileName: 'FCY (28).jpg',
+                        fileName: '_R172424.jpg',
                         result:
-                          'https://fcwz-paiban.phosee.cn/phosee/undefined/6c12216e9a984b709_FCY (28).jpg?imageView2/2/w/800/h/800',
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/f7c3af14cd95405f8__R172424.jpg?imageView2/2/w/800/h/800',
                         orientation: '',
-                        date: '2020/10/24 15:43:08',
+                        date: '2021/07/12 20:27:15',
                         is_qiniu: 1,
                         company: 'admin',
-                        x: 0,
-                        y: 1.8683510638297776,
-                        width: 2711,
-                        height: 1809.7367021276596,
-                        initialW: 2711,
-                        initialH: 1809.7367021276596,
+                        x: 644.7450980392157,
+                        y: 0,
+                        width: 2308.4901960784314,
+                        height: 1529,
+                        initialW: 2308.4901960784314,
+                        initialH: 1529,
                         invalid: true
                       }
                     }
                   ],
-                  width: 7087,
-                  height: 3543,
+                  width: 4724,
+                  height: 2362,
+                  sucai: [
+                    {
+                      id: '52-1_4724*2362_1',
+                      x: 2500,
+                      y: 172,
+                      width: 187,
+                      height: 388,
+                      title: '散文集',
+                      type: 'sucai',
+                      suolue_url:
+                        'http://image.fangcunwuzao.com/phosee/sucai/common/1624594628_38853_568_suolue.jpg',
+                      yuantu_url:
+                        'http://image.fangcunwuzao.com/phosee/sucai/common/1624594628_38853_568.jpg'
+                    }
+                  ]
+                }
+              ],
+              width: 4724,
+              height: 2362,
+              isPaper: true
+            },
+            '0-643_护封': {
+              id: '0-643_护封',
+              name: '护封',
+              isFixed: true,
+              layers: [
+                {
+                  id: '1_8835*2421_1',
+                  fill: true,
+                  match: [1, 0, 0],
+                  layer: [
+                    {
+                      x: 4632,
+                      y: 129,
+                      width: 2288,
+                      height: 2164,
+                      type: 'photo',
+                      align: 0,
+                      zIndex: 1,
+                      shape: 0,
+                      id: '1_8835*2421_1_4',
+                      data: {
+                        scale: 1,
+                        naturalH: '3482',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/b19c9a61a7d94c41b__R172249.jpg',
+                        photoId: 'b19c9a61a7d94c41b',
+                        shape: 1,
+                        fileName: '_R172249.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/b19c9a61a7d94c41b__R172249.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 20:59:37',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 0,
+                        y: 604.4555461473328,
+                        width: 2288,
+                        height: 3372.9110922946657,
+                        initialW: 2288,
+                        initialH: 3372.9110922946657,
+                        invalid: true
+                      }
+                    },
+                    {
+                      x: 670,
+                      y: 1143,
+                      width: 432,
+                      height: 136,
+                      type: 'photo',
+                      align: 0,
+                      zIndex: 1,
+                      shape: 'logo',
+                      id: '1_8835*2421_1_3'
+                    },
+                    {
+                      x: 2843,
+                      y: 1143,
+                      width: 432,
+                      height: 136,
+                      type: 'photo',
+                      align: 0,
+                      zIndex: 1,
+                      shape: 'logo',
+                      id: '1_8835*2421_1_2'
+                    },
+                    {
+                      x: 7733,
+                      y: 1143,
+                      width: 432,
+                      height: 136,
+                      type: 'photo',
+                      align: 0,
+                      zIndex: 1,
+                      shape: 'logo',
+                      id: '1_8835*2421_1_1'
+                    }
+                  ],
+                  width: 8835,
+                  height: 2421,
                   sucai: []
                 }
               ],
-              width: 7087,
-              height: 3543,
-              isPaper: true
+              width: 8835,
+              height: 2421,
+              isPart: true,
+              partId: 528,
+              paper: {
+                attribute_value_name: '木棉纯白艺术纸',
+                attribute_value_id: 990
+              },
+              bleed: [3, 3, 3, 3],
+              ridgeWidth: 29.5
             },
-            '0-548_c64f1717decd44588': {
-              id: '0-548_c64f1717decd44588',
+            '0-643_卡片': {
+              id: '0-643_卡片',
+              name: '卡片',
+              isFixed: true,
               layers: [
                 {
-                  width: 3543,
-                  height: 3543,
-                  fill: false,
-                  id: '7fb0d05ca0b140639',
-                  isAdd: true,
+                  id: '1_709*2362_737079',
+                  fill: true,
+                  match: [0, 1, 0],
                   layer: [
                     {
-                      id: '7fb0d05ca0b140639_text',
-                      type: 'text',
-                      width: 2243.7390889030403,
-                      height: 205,
-                      x: 544.1055573059843,
-                      y: 1651.4137093923473,
+                      x: 65,
+                      y: 174,
+                      width: 579,
+                      height: 1894,
+                      type: 'photo',
+                      align: 0,
+                      zIndex: 1,
+                      shape: 1,
+                      id: '1_709*2362_1_2',
                       data: {
-                        style: {
-                          'font-family':
-                            '-apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif',
-                          'text-align': 'left',
-                          'letter-spacing': '1px',
-                          'font-size': '66.67px',
-                          'line-height': 3,
-                          color: '#000'
-                        },
-                        renderContent:
-                          '<p style="font-family: -apple-system; text-align: left; letter-spacing: 1px; font-size: 66.67px; line-height: 3; color: rgb(0, 0, 0);"><span>双击添加文sdfasdfasdf字afdsafsdfsdf</span></p>',
-                        height: 2243.7390889030403,
-                        width: null,
-                        x: null
+                        scale: 1,
+                        naturalH: '3508',
+                        naturalW: '2362',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/28da06fc4c8b427c8__R172277.jpg',
+                        photoId: '28da06fc4c8b427c8',
+                        shape: 1,
+                        fileName: '_R172277.jpg',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/28da06fc4c8b427c8__R172277.jpg?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/21 22:32:44',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 348.13226909920184,
+                        y: 0,
+                        width: 1275.2645381984037,
+                        height: 1894,
+                        initialW: 1275.2645381984037,
+                        initialH: 1894,
+                        invalid: true
                       }
+                    },
+                    {
+                      x: 213,
+                      y: 2112,
+                      width: 284,
+                      height: 100,
+                      type: 'photo',
+                      align: 0,
+                      zIndex: 1,
+                      shape: 'logo',
+                      id: '1_709*2362_1_1'
                     }
-                  ]
-                },
+                  ],
+                  width: 709,
+                  height: 2362,
+                  sucai: []
+                }
+              ],
+              width: 709,
+              height: 2362,
+              isPart: true,
+              partId: 532,
+              paper: {
+                attribute_value_name: '木棉纯白艺术纸',
+                attribute_value_id: 990
+              },
+              bleed: [3, 3, 3, 3]
+            },
+            '0-643_包装盒标签': {
+              id: '0-643_包装盒标签',
+              name: '包装盒标签',
+              isFixed: true,
+              layers: [
                 {
-                  id: '1_3543*3543_17',
-                  fill: false,
+                  id: '1_1890*2067_3',
+                  fill: true,
                   match: [1, 0, 0],
                   layer: [
                     {
                       x: 0,
-                      y: 1181,
-                      width: 3543,
-                      height: 2362,
+                      y: 0,
+                      width: 1890,
+                      height: 1071,
+                      type: 'photo',
                       align: 0,
                       zIndex: 1,
-                      type: 'photo',
                       shape: 0,
-                      id: '1_3543*3543_1_1'
+                      id: '1_1890*2067_1_3',
+                      data: {
+                        scale: 1,
+                        naturalH: '4928',
+                        naturalW: '3264',
+                        rotate: 0,
+                        photoUrl:
+                          'phosee/undefined/21c5860caa5f4f779__R172275.JPG',
+                        photoId: '21c5860caa5f4f779',
+                        shape: 1,
+                        fileName: '_R172275.JPG',
+                        result:
+                          'https://fcwz-paiban.phosee.cn/phosee/undefined/21c5860caa5f4f779__R172275.JPG?imageView2/2/w/800/h/800',
+                        orientation: '',
+                        date: '2021/06/20 21:41:48',
+                        is_qiniu: 1,
+                        company: 'admin',
+                        x: 0,
+                        y: 891.2647058823532,
+                        width: 1890,
+                        height: 2853.5294117647063,
+                        initialW: 1890,
+                        initialH: 2853.5294117647063,
+                        invalid: true
+                      }
+                    },
+                    {
+                      x: 742,
+                      y: 1177,
+                      width: 406,
+                      height: 120,
+                      type: 'photo',
+                      align: 0,
+                      zIndex: 1,
+                      shape: 'logo',
+                      id: '1_1890*2067_1_2'
+                    },
+                    {
+                      x: 742,
+                      y: 1530,
+                      width: 406,
+                      height: 120,
+                      type: 'photo',
+                      align: 0,
+                      zIndex: 1,
+                      shape: 'logo',
+                      id: '1_1890*2067_1_1'
                     }
                   ],
-                  width: 3543,
-                  height: 3543,
+                  width: 1890,
+                  height: 2067,
                   sucai: []
                 }
               ],
-              width: 7086,
-              height: 3543
+              width: 1890,
+              height: 2067,
+              isPart: true,
+              partId: 297,
+              paper: null,
+              bleed: [3, 3, 3, 3]
             }
           },
           pagesIds: [
-            '0-548_首页',
-            '0-548_2',
-            '0-548_3',
-            '0-548_4',
-            '0-548_5',
-            '0-548_6',
-            '0-548_c64f1717decd44588',
-            '0-548_尾页'
+            '0-643_包装盒标签',
+            '0-643_卡片',
+            '0-643_护封',
+            '0-643_首页',
+            '0-643_3',
+            '0-643_4',
+            '0-643_5',
+            '0-643_2',
+            '0-643_6',
+            '0-643_7',
+            '0-643_尾页'
           ],
           count: 8,
           addCount: 0,
-          start: 0
+          start: 3
         }
       };
     }

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-07-16 08:53:22
- * @LastEditTime: 2021-07-23 09:04:24
+ * @LastEditTime: 2021-07-24 17:33:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/photo-album/src/main.vue
@@ -80,6 +80,7 @@ export default {
       // 剔除配件
       const pageList = this.pageList;
       const index = pageList.findIndex(item => item.name === '首页');
+      console.log('list -> index', index);
       return pageList.slice(index < 0 ? 0 : index);
     },
     frontLayers() {
@@ -187,7 +188,7 @@ export default {
     handleBack(deg, layoutIndex, count, side) {
       this.frontIndex += count;
       this.mode = 'handleFront';
-      const ele = this.backMap[side];
+      const ele = this.backMap[side]; // eslint-disable-line
       this.setBackLayout(this.frontIndex, layoutIndex);
       this.setRotate(ele, deg);
       this.setZIndex(ele, 'backIndex', count);
@@ -208,11 +209,12 @@ export default {
         eleStyle.zIndex = 0;
         this[pageIndex] += count;
         this.rotateTimer = false;
-      }, 1000);
+      }, 800);
     },
     setBackLayout(pageIndex, layoutIndex) {
-      const layers = this.pageList[pageIndex].layers;
+      const layers = this.list[pageIndex].layers;
       this.backLayout = layers[layoutIndex] || layers[0];
+      // console.log('setBackLayout -> this.backLayout', this.backLayout);
     }
   },
   watch: {

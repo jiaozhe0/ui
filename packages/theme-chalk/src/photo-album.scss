@@ -45,13 +45,11 @@
   .left-side {
     &::before {
       left: 0;
-      background-image: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        color-stop(0.95, transparent),
-        color-stop(1, #dadada)
-      );
+      background-image: -webkit-gradient(linear,
+          left top,
+          right top,
+          color-stop(0.95, transparent),
+          color-stop(1, #dadada));
     }
 
     &::after {
@@ -69,11 +67,9 @@
 
     &::before {
       left: -0;
-      background-image: -webkit-linear-gradient(
-        right,
-        transparent 95%,
-        #cacaca
-      );
+      background-image: -webkit-linear-gradient(right,
+          transparent 95%,
+          #cacaca);
     }
 
     &::after {
@@ -124,12 +120,17 @@
     transform-style: preserve-3d;
     -webkit-perspective: 2000px;
     perspective: 2000px;
+    // overflow: hidden;
 
     &.left {
       left: 0;
       transform-origin: right center;
       -webkit-transform-origin: right center;
       -moz-transform-origin: right center;
+
+      .back-fill {
+        left: -100%
+      }
     }
 
     &.right {
@@ -140,7 +141,7 @@
       // transform: rotateY(-140deg);
 
       .fill {
-        right: 0;
+        left: -100%
       }
     }
 
@@ -153,17 +154,22 @@
       z-index: 1;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
+      overflow: hidden;
     }
 
     .front {
       z-index: 2;
-      background: orange;
     }
 
     .back {
-      background: blue;
       transform: rotateY(180deg);
       -webkit-transform: rotateY(180deg);
     }
+  }
+
+  .item-wrap {
+    display: table;
+    position: absolute;
+    overflow: hidden;
   }
 }
