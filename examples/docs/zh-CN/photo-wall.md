@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 10:33:16
- * @LastEditTime: 2021-06-29 14:33:25
+ * @LastEditTime: 2021-07-27 15:39:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/photo-wall.md
@@ -20,6 +20,7 @@
       :pageList="pageList"
       :scale="0.04"
       :frame="frame"
+      :view="true"
       @click="test"
     ></fc-photo-wall>
   </el-col>
