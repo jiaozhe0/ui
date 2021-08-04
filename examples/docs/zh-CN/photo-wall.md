@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 10:33:16
- * @LastEditTime: 2021-07-27 15:39:53
+ * @LastEditTime: 2021-08-04 15:08:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/photo-wall.md
@@ -16,11 +16,12 @@
 ```html
 <el-row>
   <el-col>
+    <!-- :view="true" -->
     <fc-photo-wall
       :pageList="pageList"
-      :scale="0.04"
+      defaultId="0-359_0"
+      :scale="0.1"
       :frame="frame"
-      :view="true"
       @click="test"
     ></fc-photo-wall>
   </el-col>
@@ -38,7 +39,9 @@
           productSize: {
             width: 13838,
             height: 11830
-          }
+          },
+          bleed: [15, 15, 15, 15],
+          border: []
         },
         page_info: {
           id: '0-359',

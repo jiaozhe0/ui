@@ -1,13 +1,13 @@
 <!--
  * @Author: jiaozhe
  * @Date: 2021-06-23 10:55:28
- * @LastEditTime: 2021-07-01 08:46:13
+ * @LastEditTime: 2021-07-31 13:56:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/main.vue
 -->
 <template>
-  <div :class="['el-page-edit', { 'is-view': view }]"
+  <div :class="['el-page-edit', { 'is-view': view}, frame.type]"
        :style="fontSize">
     <div v-if="isLine"
          class="middle-line"></div>

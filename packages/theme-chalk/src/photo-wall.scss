@@ -10,5 +10,9 @@
 
   .photo-wall-item {
     position: absolute;
+
+    &.wall-active {
+      box-shadow: 0 0 0 4px #a2c6f0;
+    }
   }
 }

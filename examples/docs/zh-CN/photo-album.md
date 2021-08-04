@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 12:01:55
- * @LastEditTime: 2021-07-24 10:48:59
+ * @LastEditTime: 2021-08-04 15:07:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/page-edit.md
@@ -49,6 +49,188 @@
           type: 'photo_album'
         },
         page_info: {
+          id: '0-841',
+          pagesObj: {
+            '0-841_首页': {
+              id: '0-841_首页',
+              name: '首页',
+              isFixed: true,
+              layers: [
+                {
+                  fill: true
+                }
+              ],
+              width: 5906,
+              height: 2953,
+              isPaper: true
+            },
+            '0-841_2': {
+              id: '0-841_2',
+              layers: [
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                },
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                }
+              ],
+              width: 5906,
+              height: 2953
+            },
+            '0-841_3': {
+              id: '0-841_3',
+              layers: [
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                },
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                }
+              ],
+              width: 5906,
+              height: 2953
+            },
+            '0-841_4': {
+              id: '0-841_4',
+              layers: [
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                },
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                }
+              ],
+              width: 5906,
+              height: 2953
+            },
+            '0-841_5': {
+              id: '0-841_5',
+              layers: [
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                },
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                }
+              ],
+              width: 5906,
+              height: 2953
+            },
+            '0-841_6': {
+              id: '0-841_6',
+              layers: [
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                },
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                }
+              ],
+              width: 5906,
+              height: 2953
+            },
+            '0-841_7': {
+              id: '0-841_7',
+              layers: [
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                },
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                }
+              ],
+              width: 5906,
+              height: 2953
+            },
+            '0-841_8': {
+              id: '0-841_8',
+              layers: [
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                },
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                }
+              ],
+              width: 5906,
+              height: 2953
+            },
+            '0-841_9': {
+              id: '0-841_9',
+              layers: [
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                },
+                {
+                  width: 2953,
+                  height: 2953,
+                  fill: false
+                }
+              ],
+              width: 5906,
+              height: 2953
+            },
+            '0-841_尾页': {
+              id: '0-841_尾页',
+              name: '尾页',
+              isFixed: true,
+              layers: [
+                {
+                  fill: true
+                }
+              ],
+              width: 5906,
+              height: 2953,
+              isPaper: true
+            }
+          },
+          pagesIds: [
+            '0-841_首页',
+            '0-841_2',
+            '0-841_3',
+            '0-841_4',
+            '0-841_5',
+            '0-841_6',
+            '0-841_7',
+            '0-841_8',
+            '0-841_9',
+            '0-841_尾页'
+          ],
+          count: 10,
+          addCount: 0,
+          start: 0
+        },
+        page_infos: {
           id: '0-643',
           pagesObj: {
             '0-643_首页': {

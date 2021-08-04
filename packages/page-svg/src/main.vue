@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 22:09:03
- * @LastEditTime: 2021-07-20 10:02:30
+ * @LastEditTime: 2021-07-31 15:00:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-svg/src/main.vue
@@ -52,6 +52,7 @@ export default {
       return layers || [this.page];
     },
     sSize() {
+      console.log(this.page);
       const { width: scaleWidth, height: scaleHeight, scale } = this;
       let { width, height, id } = this.page;
       if (!width) {

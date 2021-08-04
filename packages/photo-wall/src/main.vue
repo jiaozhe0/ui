@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 10:33:16
- * @LastEditTime: 2021-07-27 15:40:34
+ * @LastEditTime: 2021-07-29 10:34:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/photo-wall/src/main.vue
@@ -14,9 +14,10 @@
          :key="page.id"
          :style="{ left: page.x + 'em', top: page.y + 'em' }"
          @click="handleClick(page.id)"
-         class="photo-wall-item">
+         :class="['photo-wall-item', {'wall-active': defaultId === page.id}]">
       <fc-page-edit :page="page"
                     :view="view"
+                    :frame="frame"
                     :scale="scale"></fc-page-edit>
     </div>
   </div>
@@ -37,6 +38,10 @@ export default {
     view: {
       type: Boolean,
       default: false
+    },
+    defaultId: {
+      type: String,
+      default: ''
     },
     pageList: Array
   },
