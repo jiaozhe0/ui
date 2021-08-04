@@ -1,24 +1,30 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 22:09:03
- * @LastEditTime: 2021-07-31 15:00:48
+ * @LastEditTime: 2021-08-04 15:46:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-svg/src/main.vue
 -->
 <template>
-  <svg :viewBox="`0 0 ${page.width} ${page.height}`"
-       :width="sSize.width"
-       :height="sSize.height">
-    <rect x="0"
-          y="0"
-          :width="page.width"
-          :height="page.height"
-          fill="#fff"></rect>
-    <layout-item v-for="(item, index) in layers"
-                 :key="item.fill+index"
-                 :index="index"
-                 :layout="item"></layout-item>
+  <svg
+    :viewBox="`0 0 ${page.width} ${page.height}`"
+    :width="sSize.width"
+    :height="sSize.height"
+  >
+    <rect
+      x="0"
+      y="0"
+      :width="page.width"
+      :height="page.height"
+      fill="#fff"
+    ></rect>
+    <layout-item
+      v-for="(item, index) in layers"
+      :key="item.fill + index"
+      :index="index"
+      :layout="item"
+    ></layout-item>
   </svg>
 </template>
 
@@ -52,7 +58,6 @@ export default {
       return layers || [this.page];
     },
     sSize() {
-      console.log(this.page);
       const { width: scaleWidth, height: scaleHeight, scale } = this;
       let { width, height, id } = this.page;
       if (!width) {

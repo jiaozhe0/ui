@@ -5,6 +5,15 @@
   display: table;
   position: relative;
 
+  &.photo-album {
+    .layer-del-icon {
+      display: block;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
   &.is-view {
     .bleed {
       border-color: #fff !important;
@@ -18,12 +27,6 @@
     .pg-layer-hint,
     .layer-invalid-icon {
       visibility: hidden;
-    }
-  }
-
-  &.photo-album {
-    .layer-del-icon {
-      display: block;
     }
   }
 
