@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 10:33:16
- * @LastEditTime: 2021-08-04 15:08:15
+ * @LastEditTime: 2021-08-04 17:20:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/photo-wall.md
@@ -33,6 +33,11 @@
         console.log(i);
       }
     },
+    mounted() {
+      document.addEventListener('click', function(e) {
+        console.log('mounted -> e', e.target);
+      });
+    },
     data() {
       return {
         frame: {
@@ -41,7 +46,8 @@
             height: 11830
           },
           bleed: [15, 15, 15, 15],
-          border: []
+          border: [],
+          type: 'photo_wall'
         },
         page_info: {
           id: '0-359',
