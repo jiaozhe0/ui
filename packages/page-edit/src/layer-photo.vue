@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:11:07
- * @LastEditTime: 2021-08-04 17:33:02
+ * @LastEditTime: 2021-08-04 17:48:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer-photo.vue
@@ -20,7 +20,7 @@
         :content="
           `图片质量低，打印清晰度不足，建议:更换照片(至少
               ${layer.width}*${layer.height}px
-)、更换模版`
+)或更换模版`
         "
       >
         <svg
