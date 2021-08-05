@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:11:07
- * @LastEditTime: 2021-08-05 09:38:36
+ * @LastEditTime: 2021-08-05 09:55:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer-photo.vue
@@ -110,7 +110,7 @@
 
 <script>
 import PhotoLayer from '../../layer-photo';
-import Tooltip from 'element-ui/packages/tooltip';
+import Tooltip from '../../tooltip';
 export default {
   props: {
     bleed: [Object, Array],
