@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 16:15:03
- * @LastEditTime: 2021-08-05 11:19:54
+ * @LastEditTime: 2021-08-05 11:49:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layout.vue
@@ -13,7 +13,7 @@
     data-type="clear"
   >
     <div
-      v-if="layout.layer.length"
+      v-if="layout.id && layout.layer.length"
       class="layout-item-content"
       data-type="clear"
     >
