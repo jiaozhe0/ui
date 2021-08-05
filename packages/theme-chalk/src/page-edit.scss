@@ -22,7 +22,7 @@
 
     .pg-layer-mask,
     .pg-layer-hint,
-    .layer-invalid-icon {
+    .layer-warning-icon {
       visibility: hidden;
     }
   }
@@ -156,7 +156,7 @@
       }
     }
 
-    .layer-invalid-icon {
+    .layer-warning-icon {
       position: absolute;
       left: 10px;
       top: 15px;
@@ -195,7 +195,7 @@
     -moz-transition: 0.4s all;
     -ms-transition: 0.4s all;
     -o-transition: 0.4s all;
-    z-index: 8;
+    // z-index: 8;
 
     &::after {
       position: absolute;
