@@ -6,6 +6,7 @@ import PhotoWall from '../packages/photo-wall/index.js';
 import LayerImage from '../packages/layer-image/index.js';
 import PageSvg from '../packages/page-svg/index.js';
 import PhotoAlbum from '../packages/photo-album/index.js';
+import Tooltip from '../packages/tooltip/index.js';
 const components = [
     PageEdit,
   LayerPhoto,
@@ -13,7 +14,8 @@ const components = [
   PhotoWall,
   LayerImage,
   PageSvg,
-  PhotoAlbum
+  PhotoAlbum,
+  Tooltip
 ]
 const install = function(Vue, opts = {}) {
   components.forEach(component => {
@@ -21,7 +23,7 @@ const install = function(Vue, opts = {}) {
   });
 }
 export default {
-  version: '2.1.4-1',
+  version: '2.1.4-2',
   install,
   PageEdit,
   LayerPhoto,
@@ -29,5 +31,6 @@ export default {
   PhotoWall,
   LayerImage,
   PageSvg,
-  PhotoAlbum
+  PhotoAlbum,
+  Tooltip
 }
