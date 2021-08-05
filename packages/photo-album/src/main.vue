@@ -1,42 +1,38 @@
 <!--
  * @Author: your name
  * @Date: 2021-07-16 08:53:22
- * @LastEditTime: 2021-07-24 17:33:39
+ * @LastEditTime: 2021-08-05 16:41:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/photo-album/src/main.vue
 -->
 <template>
-  <div class="el-photo-album"
-       :style="size">
-    <div class="prev-btn"
-         @click="prev"></div>
-    <div class="next-btn"
-         @click="next"></div>
+  <div class="el-photo-album" :style="size">
+    <div class="prev-btn" @click="prev"></div>
+    <div class="next-btn" @click="next"></div>
     <div class="left-side"></div>
     <div class="right-side"></div>
     <div class="photo-ablum-outside">
-      <div class="photo-album-inside"
-           :style="position">
-        <div class="photo-album-item"
-             id="front-page"
-             style="z-index: 1">
-          <album-item v-for="(item, index) in frontLayers"
-                      :key="'f' + item.id + index"
-                      :layout="item"
-                      :backLayout="backLayout"
-                      :scale="scale"
-                      :index="index"></album-item>
+      <div class="photo-album-inside" :style="position">
+        <div class="photo-album-item" id="front-page" style="z-index: 1">
+          <album-item
+            v-for="(item, index) in frontLayers"
+            :key="'f' + item.id + index"
+            :layout="item"
+            :backLayout="backLayout"
+            :scale="scale"
+            :index="index"
+          ></album-item>
         </div>
-        <div class="photo-album-item"
-             id="back-page"
-             style="z-index: 0">
-          <album-item v-for="(item, index) in backLayers"
-                      :key="'b' + item.id + index"
-                      :layout="item"
-                      :backLayout="backLayout"
-                      :scale="scale"
-                      :index="index"></album-item>
+        <div class="photo-album-item" id="back-page" style="z-index: 0">
+          <album-item
+            v-for="(item, index) in backLayers"
+            :key="'b' + item.id + index"
+            :layout="item"
+            :backLayout="backLayout"
+            :scale="scale"
+            :index="index"
+          ></album-item>
         </div>
       </div>
     </div>
@@ -80,7 +76,6 @@ export default {
       // 剔除配件
       const pageList = this.pageList;
       const index = pageList.findIndex(item => item.name === '首页');
-      console.log('list -> index', index);
       return pageList.slice(index < 0 ? 0 : index);
     },
     frontLayers() {
@@ -184,6 +179,7 @@ export default {
       this.setBackLayout(this.backIndex, layoutIndex);
       this.setRotate(ele, deg);
       this.setZIndex(ele, 'frontIndex', count);
+      this.$emit('change', this.backIndex);
     },
     handleBack(deg, layoutIndex, count, side) {
       this.frontIndex += count;
@@ -192,6 +188,7 @@ export default {
       this.setBackLayout(this.frontIndex, layoutIndex);
       this.setRotate(ele, deg);
       this.setZIndex(ele, 'backIndex', count);
+      this.$emit('change', this.frontIndex);
     },
     setRotate(eleStyle, deg) {
       eleStyle.zIndex = 1;

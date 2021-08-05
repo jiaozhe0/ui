@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 12:01:55
- * @LastEditTime: 2021-08-04 15:07:52
+ * @LastEditTime: 2021-08-05 16:23:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/examples/docs/zh-CN/page-edit.md
@@ -20,7 +20,9 @@
       :pageList="list"
       :scale="0.16"
       :frame="frame"
+      @change="test"
     ></fc-photo-album>
+    <div>{{index}}</div>
   </el-col>
 </el-row>
 <script>
@@ -38,6 +40,7 @@
     },
     data() {
       return {
+        index: 1,
         frame: {
           bleed: [3, 3, 3, 3],
           border: [],
