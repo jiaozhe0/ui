@@ -21,7 +21,7 @@ const install = function(Vue, opts = {}) {
   });
 }
 export default {
-  version: '2.1.4-14',
+  version: '2.1.4-15',
   install,
   PageEdit,
   LayerPhoto,
