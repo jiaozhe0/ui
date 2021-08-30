@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:11:07
- * @LastEditTime: 2021-08-30 15:33:30
+ * @LastEditTime: 2021-08-30 15:44:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer-photo.vue
@@ -117,8 +117,6 @@ export default {
     bleed: [Object, Array],
     layer: Object,
     layoutId: String,
-    // layerId: String,
-    // pageId: String,
     scale: {
       type: Number,
       default: 1
