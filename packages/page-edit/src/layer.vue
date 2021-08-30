@@ -1,13 +1,11 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:09:45
- * @LastEditTime: 2021-08-30 14:57:10
+ * @LastEditTime: 2021-08-30 15:20:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer.vue
    :layoutIndex="layoutIndex"
-   //  :pageId="pageId"
-   :pageId="pageId"
 -->
 <template>
   <div
