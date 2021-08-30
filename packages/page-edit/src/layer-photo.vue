@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:11:07
- * @LastEditTime: 2021-08-30 14:38:57
+ * @LastEditTime: 2021-08-30 15:33:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer-photo.vue
@@ -13,6 +13,7 @@
     class="pg-photo-layer"
     :data-photoid="layer.data && layer.data.photoId"
     :data-layerid="layerId"
+    data-type="layer"
     data-move="true"
   >
     <div v-if="bleed.borderWidth" :style="bleedVal" class="bleed"></div>
