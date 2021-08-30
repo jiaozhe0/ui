@@ -1,24 +1,28 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:09:45
- * @LastEditTime: 2021-08-30 12:58:48
+ * @LastEditTime: 2021-08-30 14:57:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer.vue
    :layoutIndex="layoutIndex"
    //  :pageId="pageId"
+   :pageId="pageId"
 -->
 <template>
-  <div :style="position"
-       :class="['pg-layer-item', layer.type]"
-       :data-layerid="layerId"
-       data-type="layer">
-    <component :is="layer.type + 'Layer'"
-               :scale="scale"
-               :layoutId="layoutId"
-               :pageId="pageId"
-               :bleed="bleed"
-               :layer="layer"></component>
+  <div
+    :style="position"
+    :class="['pg-layer-item', layer.type]"
+    :data-layerid="layerId"
+    data-type="layer"
+  >
+    <component
+      :is="layer.type + 'Layer'"
+      :scale="scale"
+      :layoutId="layoutId"
+      :bleed="bleed"
+      :layer="layer"
+    ></component>
   </div>
 </template>
 <script>

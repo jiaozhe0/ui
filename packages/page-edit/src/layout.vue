@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 16:15:03
- * @LastEditTime: 2021-08-30 11:25:01
+ * @LastEditTime: 2021-08-30 15:06:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layout.vue
@@ -9,21 +9,27 @@
                 :pageId="pageId"
 -->
 <template>
-  <div :class="['pg-layout-item', { checked: checked, fill: layout.fill }]"
-       data-type="clear">
-    <div v-if="layout.id && layout.layer.length"
-         class="layout-item-content"
-         data-type="clear">
-      <pg-layer v-for="layer in layout.layer"
-                :key="layer.id"
-                :layoutId="layoutId"
-                :bleed="bleed"
-                :scale="scale"
-                :layer="layer"></pg-layer>
+  <div
+    :class="['pg-layout-item', { checked: checked, fill: layout.fill }]"
+    :layerid="layoutId"
+    data-type="clear"
+  >
+    <div
+      v-if="layout.id && layout.layer.length"
+      class="layout-item-content"
+      data-type="clear"
+    >
+      <pg-layer
+        v-for="layer in layout.layer"
+        :key="layer.id"
+        :layoutId="layoutId"
+        :bleed="bleed"
+        :scale="scale"
+        :layer="layer"
+      ></pg-layer>
     </div>
-    <div v-else
-         class="layout-item-empty">
-      {{hintText}}
+    <div v-else class="layout-item-empty">
+      {{ hintText }}
     </div>
   </div>
 </template>
