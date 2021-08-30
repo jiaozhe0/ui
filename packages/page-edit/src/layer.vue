@@ -15,7 +15,7 @@
        data-type="layer">
     <component :is="layer.type + 'Layer'"
                :scale="scale"
-               :layerId="layerId"
+               :layoutId="layoutId"
                :pageId="pageId"
                :bleed="bleed"
                :layer="layer"></component>
