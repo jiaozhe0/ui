@@ -1,16 +1,18 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:12:00
- * @LastEditTime: 2021-08-30 12:57:20
+ * @LastEditTime: 2021-08-30 14:30:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/bleed.vue
 -->
 <template>
   <div class="pg-bleed">
-    <div v-for="item in bleedList"
-         :class="['pg-bleed-item', item.type]"
-         :style="item"></div>
+    <div
+      v-for="item in bleedList"
+      :class="['pg-bleed-item', item.type]"
+      :style="item"
+    ></div>
   </div>
 </template>
 
@@ -19,7 +21,7 @@ export default {
   props: {
     bleed: Array
   },
-  inject: ['Android'],
+  inject: ['isAndroid'],
   computed: {
     bleedList() {
       const { bleed, scale, Android } = this;
