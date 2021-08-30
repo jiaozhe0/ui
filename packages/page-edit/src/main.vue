@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaozhe
  * @Date: 2021-06-23 10:55:28
- * @LastEditTime: 2021-07-31 13:56:29
+ * @LastEditTime: 2021-08-30 14:09:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/main.vue
@@ -22,15 +22,16 @@
          :style="size.outside">
       <div class="el-page-content"
            :style="size.inside">
+        <!-- :layoutIndex="index"  :pageId="page.id" -->
         <pg-layout v-for="(item, index) in page.layers"
                    :key="index"
                    :layout="item"
-                   :layoutIndex="index"
                    :bleed="bleed"
                    :scale="scale"
-                   :checked="layoutIndex === index"
-                   :pageId="page.id"
-                   @click.native="handleClick(index)"></pg-layout>
+                   :hintText="hintText"
+                   :layoutId="page.id+'&'+index"
+                   :checked="pageId === page.id && layoutIndex === index"
+                   @click.native="handleClick(page.id, index)"></pg-layout>
       </div>
     </div>
   </div>
@@ -75,8 +76,17 @@ export default {
     layoutIndex: {
       type: Number,
       default: -1
+    },
+    pageId: {
+      type: String,
+      default: ''
+    },
+    hintText: {
+      type: String,
+      default: '点击或拖拽左侧图片，智能创建页面'
     }
   },
+  inject: ['isAndroid'],
   computed: {
     fontSize() {
       return {
@@ -84,10 +94,15 @@ export default {
       };
     },
     bleed() {
-      const { page, frame } = this;
+      const { page, frame, scale, isAndroid } = this;
       const { layers } = page;
       const bleed = page.bleed || frame.bleed;
       if (layers[0].output !== 'more') return bleed;
+      if (isAndroid) {
+        return {
+          borderWidth: bleed[0] * 11.8 * scale + 'px'
+        };
+      }
       return {
         borderWidth: bleed[0] * 11.8 + 'em'
       };
@@ -98,11 +113,34 @@ export default {
       return type === 'photo_album' && !isPart && !isHalf;
     },
     size() {
-      const { width, height, layers } = this.page;
+      const { isAndroid, scale, page } = this;
+      const { width, height, layers } = page;
       const [layout] = layers;
       let transform = 'none';
       let realWidth = width;
       let realHeight = height;
+      if (isAndroid) {
+        realWidth = realWidth * scale;
+        realHeight = realHeight * scale;
+        if (this.view && (!layout.output || layout.output === 'one_border')) {
+          const val = this.bleed[0] * 11.8 * scale;
+          transform = `translate(-${val}px, -${val}px)`;
+          realWidth -= val * 2;
+          realHeight -= val * 2;
+        }
+        return {
+          outside: {
+            fontSize: this.scale + 'px',
+            width: realWidth + 'px',
+            height: realHeight + 'px'
+          },
+          inside: {
+            width: width * scale + 'px',
+            height: height * scale + 'px',
+            transform
+          }
+        };
+      }
       if (this.view && (!layout.output || layout.output === 'one_border')) {
         const val = this.bleed[0] * 11.8;
         transform = `translate(-${val}em, -${val}em)`;
@@ -130,8 +168,11 @@ export default {
     PgRidge
   },
   methods: {
-    handleClick(index) {
-      this.$emit('select-layout', index);
+    handleClick(pageId, index) {
+      this.$emit('select-layout', {
+        pageId,
+        layoutIndex: index
+      });
     }
   }
 };

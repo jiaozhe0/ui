@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:12:00
- * @LastEditTime: 2021-06-30 12:56:52
+ * @LastEditTime: 2021-08-30 12:57:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/bleed.vue
@@ -19,33 +19,36 @@ export default {
   props: {
     bleed: Array
   },
+  inject: ['Android'],
   computed: {
     bleedList() {
-      const val = this.bleed[0] * 11.8;
-      return this.bleed.map((item, index) => {
+      const { bleed, scale, Android } = this;
+      const value = bleed[0] * 11.8;
+      const val = Android ? value * scale + 'px' : value + 'em';
+      return bleed.map((item, index) => {
         switch (index) {
           case 0:
             return {
               top: 0,
-              height: val + 'em',
+              height: val,
               type: 'horizontal'
             };
           case 1:
             return {
               right: 0,
-              width: val + 'em',
+              width: val,
               type: 'vertical'
             };
           case 2:
             return {
               bottom: 0,
-              height: val + 'em',
+              height: val,
               type: 'horizontal'
             };
           case 3:
             return {
               left: 0,
-              width: val + 'em',
+              width: val,
               type: 'vertical'
             };
         }

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:09:45
- * @LastEditTime: 2021-06-30 21:15:43
+ * @LastEditTime: 2021-08-30 12:58:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer.vue
@@ -12,7 +12,6 @@
   <div :style="position"
        :class="['pg-layer-item', layer.type]"
        :data-layerid="layerId"
-       :data-pageid="pageId"
        data-type="layer">
     <component :is="layer.type + 'Layer'"
                :scale="scale"
@@ -34,17 +33,26 @@ export default {
   },
   props: {
     layer: Object,
-    layoutIndex: Number,
-    pageId: String,
+    layoutId: String,
     bleed: [Object, Array],
     scale: {
       type: Number,
       default: 1
     }
   },
+  inject: ['isAndroid'],
   computed: {
     position() {
-      const { x, y, width, height } = this.layer;
+      const { isAndroid, scale, layer } = this;
+      const { x, y, width, height } = layer;
+      if (isAndroid) {
+        return {
+          left: x * scale + 'px',
+          top: y * scale + 'px',
+          width: width * scale + 'px',
+          height: height * scale + 'px'
+        };
+      }
       return {
         left: x + 'em',
         top: y + 'em',
@@ -53,8 +61,8 @@ export default {
       };
     },
     layerId() {
-      const { layoutIndex, layer } = this;
-      return `${layoutIndex}-${layer.id}`;
+      const { layoutId, layer } = this;
+      return `${layoutId}&${layer.id}`;
     }
   }
 };
