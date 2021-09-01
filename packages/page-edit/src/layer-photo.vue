@@ -10,7 +10,7 @@
 -->
 <template>
   <div
-    class="pg-photo-layer"
+    class="pg-photo-layer draggable-source"
     :data-photoid="layer.data && layer.data.photoId"
     :data-layerid="layerId"
     data-type="layer"

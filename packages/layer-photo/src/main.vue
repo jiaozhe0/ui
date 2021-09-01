@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:13:01
- * @LastEditTime: 2021-07-16 09:12:19
+ * @LastEditTime: 2021-09-01 09:40:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/layer-photo/src/main.vue
@@ -39,7 +39,7 @@
 import circleMask from './circle-mask';
 import ellipseMask from './ellipse-mask';
 export default {
-  name: 'ElLayerPhoto',
+  name: 'FcLayerPhoto',
   props: {
     layer: Object,
     visible: {

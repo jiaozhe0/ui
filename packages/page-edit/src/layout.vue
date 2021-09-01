@@ -1,28 +1,27 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 16:15:03
- * @LastEditTime: 2021-08-30 15:44:32
+ * @LastEditTime: 2021-09-01 09:11:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layout.vue
 -->
 <template>
-  <div
-    :class="['pg-layout-item', { checked: checked, fill: layout.fill }]"
-    :data-layerid="layoutId"
-    data-type="layout"
-  >
-    <div v-if="layout.id && layout.layer.length" class="layout-item-content">
-      <pg-layer
-        v-for="layer in layout.layer"
-        :key="layer.id"
-        :layoutId="layoutId"
-        :bleed="bleed"
-        :scale="scale"
-        :layer="layer"
-      ></pg-layer>
+  <div :class="['pg-layout-item', 'draggable-source', { checked: checked, fill: layout.fill }]"
+       :data-layerid="layoutId"
+       data-type="layout">
+    <div v-if="layout.id && layout.layer.length"
+         class="layout-item-content"
+         data-type="layout">
+      <pg-layer v-for="layer in layout.layer"
+                :key="layer.id"
+                :layoutId="layoutId"
+                :bleed="bleed"
+                :scale="scale"
+                :layer="layer"></pg-layer>
     </div>
-    <div v-else class="layout-item-empty">
+    <div v-else
+         class="layout-item-empty">
       {{ hintText }}
     </div>
   </div>
