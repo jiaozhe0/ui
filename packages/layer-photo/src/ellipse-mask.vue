@@ -1,13 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-12 16:39:17
- * @LastEditTime: 2021-06-28 17:43:40
+ * @LastEditTime: 2021-09-02 16:00:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /element/packages/photo-layer/src/ellipse-mask.vue
 -->
 <template>
-  <clipPath :id="layer.id">
+  <clipPath :id="layerId">
     <ellipse :cx="pos.x"
              :cy="pos.y"
              :rx="pos.x"
@@ -18,6 +18,7 @@
 <script>
 export default {
   props: {
+    layerId: String,
     layer: Object
   },
   computed: {

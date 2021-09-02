@@ -111,7 +111,8 @@
 
   .pg-photo-layer {
     width: inherit;
-    height: initial;
+    height: inherit;
+    box-sizing: content-box;
 
     .centre {
       position: absolute;

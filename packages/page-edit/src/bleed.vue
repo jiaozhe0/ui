@@ -17,7 +17,8 @@
 <script>
 export default {
   props: {
-    bleed: Array
+    bleed: Array,
+    scale: Number
   },
   inject: ['isAndroid'],
   computed: {

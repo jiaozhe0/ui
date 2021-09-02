@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:13:01
- * @LastEditTime: 2021-09-01 09:40:53
+ * @LastEditTime: 2021-09-02 15:59:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/layer-photo/src/main.vue
@@ -31,6 +31,7 @@
     </g>
     <component v-if="layer.style"
                :is="layer.style + 'Mask'"
+               :layerId="layerId"
                :layer="layer"></component>
   </svg>
 </template>
@@ -42,6 +43,7 @@ export default {
   name: 'FcLayerPhoto',
   props: {
     layer: Object,
+    layerId: String,
     visible: {
       type: Boolean,
       default: false
@@ -76,8 +78,8 @@ export default {
       }
     },
     clipPath() {
-      const { style, id } = this.layer;
-      return style ? `url(#${id})` : '';
+      const { layerId, layer } = this;
+      return layer.style ? `url(#${layerId})` : '';
     }
   },
   components: {
