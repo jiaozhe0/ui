@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 21:45:40
- * @LastEditTime: 2021-06-28 21:55:32
+ * @LastEditTime: 2021-09-03 13:38:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/layer-image/src/main.vue
@@ -26,6 +26,6 @@
 
 <script>
 export default {
-  name: 'FcLayerImage'
+  name: 'FcLayerSucai'
 };
 </script>

@@ -1,37 +1,33 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-23 11:09:45
- * @LastEditTime: 2021-08-30 15:20:34
+ * @LastEditTime: 2021-09-03 13:41:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/page-edit/src/layer.vue
    :layoutIndex="layoutIndex"
 -->
 <template>
-  <div
-    :style="position"
-    :class="['pg-layer-item', layer.type]"
-    :data-layerid="layerId"
-    data-type="layer"
-  >
-    <component
-      :is="layer.type + 'Layer'"
-      :scale="scale"
-      :layoutId="layoutId"
-      :bleed="bleed"
-      :layer="layer"
-    ></component>
+  <div :style="position"
+       :class="['pg-layer-item', layer.type]"
+       :data-layerid="layerId"
+       data-type="layer">
+    <component :is="layer.type + 'Layer'"
+               :scale="scale"
+               :layoutId="layoutId"
+               :bleed="bleed"
+               :layer="layer"></component>
   </div>
 </template>
 <script>
 import PhotoLayer from './layer-photo';
 import TextLayer from '../../layer-text';
-import ImageLayer from '../../layer-image';
+import SucaiLayer from '../../layer-image';
 export default {
   components: {
     PhotoLayer,
     TextLayer,
-    ImageLayer
+    SucaiLayer
   },
   props: {
     layer: Object,
