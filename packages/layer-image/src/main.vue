@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-28 21:45:40
- * @LastEditTime: 2021-09-03 14:04:19
+ * @LastEditTime: 2021-09-03 14:38:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fcwz-ui/packages/layer-image/src/main.vue
@@ -29,7 +29,10 @@
 export default {
   props: {
     layer: Object,
-    scale: Number
+    scale: {
+      type: Number,
+      default: 1
+    }
   },
   name: 'FcLayerSucai'
 };
